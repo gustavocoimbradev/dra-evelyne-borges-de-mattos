@@ -35,7 +35,7 @@ export default function Locations() {
                 <div className="absolute inset-0 bg-gradient-to-t from-porcelain via-porcelain/50 to-porcelain/10" />
               </div>
 
-              <div className="relative flex flex-1 flex-col border-t border-espresso/10 p-6 text-center md:p-8 md:text-left">
+              <div className="relative flex flex-1 flex-col p-6 text-center md:p-8 md:text-left">
                 <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-clay">
                   {online.tagline}
                 </p>
@@ -84,7 +84,7 @@ export default function Locations() {
                 <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/40 to-espresso/20" />
               </div>
 
-              <div className="relative flex flex-1 flex-col border-t border-porcelain/10 p-6 text-center md:p-8 md:text-left">
+              <div className="relative flex flex-1 flex-col p-6 text-center md:p-8 md:text-left">
                 <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-rose">
                   {presencial.tagline}
                 </p>

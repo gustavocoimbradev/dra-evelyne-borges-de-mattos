@@ -23,6 +23,10 @@
     @apply bg-mist font-sans text-espresso antialiased;
   }
 
+  body.theme-clean {
+    @apply bg-[#fffcfa];
+  }
+
   ::selection {
     @apply bg-clay text-white;
   }

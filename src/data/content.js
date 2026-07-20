@@ -142,7 +142,7 @@ export const LOCATIONS = [
     tagline: 'De onde você estiver',
     description:
       'Avaliação completa por videochamada, com a mesma atenção e cuidado da consulta no consultório.',
-    points: ['Horários flexíveis', 'Sem deslocamento', 'Atendimento pelo WhatsApp'],
+    points: ['Horários flexíveis', 'Sem deslocamento', 'Consulta por videochamada'],
     cta: { label: 'Agendar consulta online', href: WHATSAPP.online },
     image: '/assets/images/bg-1.jpg',
   },
@@ -157,7 +157,7 @@ export const LOCATIONS = [
       city: 'Varginha — MG',
       zip: '37012-005',
     },
-    points: ['Exame clínico presencial', 'Ambiente reservado', 'Centro de Varginha'],
+    points: ['Exame clínico presencial', 'Ambiente reservado', 'Acompanhamento próximo'],
     cta: { label: 'Agendar consulta presencial', href: WHATSAPP.presencial },
     image: '/assets/images/bg-2.webp',
   },
