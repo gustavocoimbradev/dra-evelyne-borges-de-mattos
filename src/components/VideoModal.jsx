@@ -153,16 +153,11 @@ export default function VideoModal({ video, onClose, onChange }) {
         onClick={onClose}
       />
 
-      <div className="lightbox-panel relative z-10 mx-auto flex h-full w-full max-w-[430px] flex-col px-3 py-4 sm:px-4 sm:py-6">
-        <div className="mb-3 flex shrink-0 items-center justify-between gap-3">
-          <div className="min-w-0">
-            <p className="text-[10px] font-medium tracking-[0.28em] uppercase text-rose/80">
-              {String(activeIndex + 1).padStart(2, '0')} / {String(VIDEOS.length).padStart(2, '0')}
-            </p>
-            <h2 className="truncate font-display text-lg text-porcelain sm:text-xl">
-              {VIDEOS[activeIndex]?.title}
-            </h2>
-          </div>
+      <div className="lightbox-panel relative z-10 mx-auto flex h-full w-full max-w-[430px] flex-col px-2 pt-[max(0.75rem,env(safe-area-inset-top))] pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-4 sm:py-6">
+        <div className="mb-2 flex shrink-0 items-center justify-between gap-3 sm:mb-3">
+          <p className="text-[10px] font-medium tracking-[0.28em] uppercase text-rose/80">
+            {String(activeIndex + 1).padStart(2, '0')} / {String(VIDEOS.length).padStart(2, '0')}
+          </p>
           <button
             type="button"
             className="grid size-11 shrink-0 place-items-center rounded-full border border-porcelain/20 bg-porcelain/10 text-porcelain transition hover:bg-porcelain/20"
@@ -173,10 +168,10 @@ export default function VideoModal({ video, onClose, onChange }) {
           </button>
         </div>
 
-        <div className="relative mx-auto flex min-h-0 w-full max-w-[380px] flex-1 flex-col justify-center">
+        <div className="relative mx-auto flex min-h-0 w-full max-w-[380px] flex-1">
           <div
             ref={scrollerRef}
-            className="hide-scrollbar mx-auto h-[min(62svh,560px)] w-full overflow-y-auto overscroll-y-contain rounded-[1.5rem] ring-1 ring-porcelain/15 sm:h-[min(72svh,640px)]"
+            className="hide-scrollbar h-full w-full overflow-y-auto overscroll-y-contain rounded-[1.25rem] ring-1 ring-porcelain/15 sm:rounded-[1.5rem]"
             style={{ scrollSnapType: 'y mandatory', WebkitOverflowScrolling: 'touch' }}
           >
             {VIDEOS.map((item, index) => (
@@ -186,7 +181,8 @@ export default function VideoModal({ video, onClose, onChange }) {
                 ref={(node) => {
                   slideRefs.current[index] = node
                 }}
-                className="relative h-[min(62svh,560px)] w-full shrink-0 snap-start snap-always bg-black sm:h-[min(72svh,640px)]"
+                className="relative h-full w-full shrink-0 snap-start snap-always bg-black"
+                style={{ minHeight: '100%' }}
               >
                 <div className="absolute inset-x-0 top-0 z-10 flex justify-center pt-3">
                   <span className="h-1 w-14 rounded-full bg-porcelain/25" />
@@ -207,21 +203,16 @@ export default function VideoModal({ video, onClose, onChange }) {
                     <div className="absolute inset-0 bg-espresso/35" />
                   </div>
                 )}
-
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-espresso/85 to-transparent px-5 pt-16 pb-5">
-                  <p className="font-display text-xl text-porcelain">{item.title}</p>
-                </div>
               </div>
             ))}
           </div>
 
-          {/* Mobile: setas abaixo do vídeo / Desktop: ao lado */}
-          <div className="mt-3 flex shrink-0 items-center justify-center gap-3 sm:absolute sm:top-1/2 sm:right-0 sm:mt-0 sm:-translate-y-1/2 sm:translate-x-[calc(100%+0.75rem)] sm:flex-col sm:gap-2">
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-20 flex flex-col items-center justify-center gap-2 pr-2 sm:pr-0 sm:translate-x-[calc(100%+0.75rem)]">
             <button
               type="button"
               onClick={() => goTo(activeIndexRef.current - 1)}
               disabled={activeIndex === 0}
-              className="grid size-11 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25"
+              className="pointer-events-auto grid size-11 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25"
               aria-label="Vídeo anterior"
             >
               <IconChevronUp className="size-5" />
@@ -230,7 +221,7 @@ export default function VideoModal({ video, onClose, onChange }) {
               type="button"
               onClick={() => goTo(activeIndexRef.current + 1)}
               disabled={activeIndex === VIDEOS.length - 1}
-              className="grid size-11 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25"
+              className="pointer-events-auto grid size-11 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25"
               aria-label="Próximo vídeo"
             >
               <IconChevronDown className="size-5" />
@@ -238,7 +229,7 @@ export default function VideoModal({ video, onClose, onChange }) {
           </div>
         </div>
 
-        <p className="mt-3 shrink-0 text-center text-[10px] tracking-[0.18em] uppercase text-porcelain/40">
+        <p className="mt-2 hidden shrink-0 text-center text-[10px] tracking-[0.18em] uppercase text-porcelain/40 sm:block">
           Arraste ou role para cima / baixo
         </p>
       </div>
