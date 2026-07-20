@@ -179,6 +179,43 @@ writePage({
 })
 urls.push(authorUrl)
 
+const couplePath = '/casal-da-plastica/'
+const coupleCanonical = `${catalog.siteUrl}${couplePath}`
+const coupleTitle = `Casal da Plástica | ${catalog.siteName} e Dr. Ítalo Venturelli`
+const coupleDescription = `Redefina seu contorno corporal com a ${catalog.siteName} e o Dr. Ítalo Venturelli, cirurgiões plásticos com atendimento em ${catalog.city}.`
+const coupleImage = `${catalog.siteUrl}/assets/images/casal/hero-casal.png`
+
+writePage({
+  pathSegments: ['casal-da-plastica'],
+  title: coupleTitle,
+  description: coupleDescription,
+  canonical: coupleCanonical,
+  author: AUTHOR.name,
+  image: coupleImage,
+  bodyHtml: `
+    <h1>O Casal da Plástica</h1>
+    <p>${escapeHtml(coupleDescription)}</p>
+    <p>Com a <a rel="author" href="${AUTHOR.path}">${escapeHtml(AUTHOR.name)}</a> e o Dr. Ítalo Venturelli.</p>
+    <p><a href="${WHATSAPP_PRESENCIAL}">Agendar consulta</a></p>
+  `,
+  jsonLd: {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        name: coupleTitle,
+        description: coupleDescription,
+        url: coupleCanonical,
+        author: { '@id': `${authorUrl}#person` },
+        publisher: { '@id': `${catalog.siteUrl}/#organization` },
+      },
+      authorPersonLd(),
+      publisherLd(),
+    ],
+  },
+})
+urls.push(coupleCanonical)
+
 for (const category of catalog.categories) {
   const catPath = `/procedimentos/${category.slug}/`
   const catCanonical = `${catalog.siteUrl}${catPath}`
