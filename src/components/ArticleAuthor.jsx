@@ -37,7 +37,7 @@ export default function ArticleAuthor({ publishedLabel = 'Artigo educativo', var
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Link
                 to={authorPath()}
-                className="inline-flex items-center justify-center bg-clay px-6 py-3.5 text-sm font-medium tracking-wide text-white transition hover:bg-clay-deep"
+                className="inline-flex items-center justify-center bg-espresso px-6 py-3.5 text-sm font-medium tracking-wide text-porcelain transition hover:bg-espresso-soft"
               >
                 Ver perfil da autora
               </Link>

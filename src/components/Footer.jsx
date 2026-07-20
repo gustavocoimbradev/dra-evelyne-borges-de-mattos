@@ -37,7 +37,7 @@ export default function Footer() {
                 {NAV_ITEMS.map((item) => (
                   <li key={item.href}>
                     <Link
-                      to={isHome ? item.href : `/${item.href}`}
+                      to={item.href.startsWith('/') ? item.href : isHome ? item.href : `/${item.href}`}
                       className="text-porcelain/80 transition hover:text-porcelain"
                     >
                       {item.label}

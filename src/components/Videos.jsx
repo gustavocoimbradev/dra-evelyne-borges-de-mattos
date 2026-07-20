@@ -46,7 +46,7 @@ export default function Videos({ onOpenVideo }) {
                   className="aspect-[3/4] max-h-[380px] w-full object-cover transition duration-700 group-hover:scale-[1.03]"
                 />
                 <span className="absolute inset-0 bg-gradient-to-t from-espresso/75 via-espresso/10 to-transparent" />
-                <span className="absolute left-4 top-4 grid size-10 place-items-center bg-clay text-white transition group-hover:bg-clay-deep">
+                <span className="absolute left-4 top-4 grid size-10 place-items-center bg-espresso text-porcelain transition group-hover:bg-clay-deep">
                   <IconPlay className="size-4 translate-x-px" />
                 </span>
                 <span className="absolute inset-x-0 bottom-0 p-4">
@@ -67,17 +67,17 @@ export default function Videos({ onOpenVideo }) {
         </div>
       </section>
 
-      <section id="posts" className="bg-clay">
+      <section id="posts" className="bg-sand">
         <div className="container-site flex flex-col items-center gap-6 py-12 text-center md:flex-row md:items-center md:justify-between md:text-left">
           <Rise>
-            <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-white/70">Instagram</p>
-            <h2 className="mt-2 font-display text-2xl text-white md:text-3xl">Bastidores no Instagram</h2>
-            <p className="mt-1 text-sm text-white/75">@draevelyneborgesdemattos</p>
+            <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-clay">Instagram</p>
+            <h2 className="mt-2 font-display text-2xl text-espresso md:text-3xl">Bastidores no Instagram</h2>
+            <p className="mt-1 text-sm text-stone">@draevelyneborgesdemattos</p>
           </Rise>
           <Rise delay={2} className="w-full md:w-auto">
             <Button
               href={SOCIAL.instagram}
-              variant="soft"
+              variant="dark"
               id="botao-instagram"
               icon="instagram"
               className="!w-full md:!w-auto"

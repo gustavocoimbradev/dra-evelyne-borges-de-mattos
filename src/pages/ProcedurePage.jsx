@@ -61,22 +61,22 @@ export default function ProcedurePage() {
         <BreadcrumbBar>
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link to="/" className="transition hover:text-white">
+              <Link to="/" className="transition hover:text-espresso">
                 Início
               </Link>
             </li>
-            <li aria-hidden="true" className="text-white/50">
+            <li aria-hidden="true" className="text-espresso/40">
               /
             </li>
             <li>
-              <Link to={categoryPath(category.slug)} className="transition hover:text-white">
+              <Link to={categoryPath(category.slug)} className="transition hover:text-espresso">
                 {category.title}
               </Link>
             </li>
-            <li aria-hidden="true" className="text-white/50">
+            <li aria-hidden="true" className="text-espresso/40">
               /
             </li>
-            <li className="text-white">{procedure.title}</li>
+            <li className="text-espresso">{procedure.title}</li>
           </ol>
         </BreadcrumbBar>
 
@@ -185,7 +185,7 @@ export default function ProcedurePage() {
                   <li key={item.slug}>
                     <Link
                       to={procedurePath(category.slug, item.slug)}
-                      className="group flex h-full items-start justify-between gap-3 border border-clay/15 bg-white p-5 transition hover:border-clay/40 hover:shadow-[0_12px_40px_-20px_rgba(196,91,79,0.35)]"
+                      className="group flex h-full items-start justify-between gap-3 border border-clay/15 bg-white p-5 transition hover:border-clay/40 hover:shadow-[0_12px_40px_-20px_rgba(154,118,100,0.35)]"
                     >
                       <h3 className="font-display text-lg leading-snug text-espresso transition group-hover:text-clay md:text-xl">
                         {item.title}

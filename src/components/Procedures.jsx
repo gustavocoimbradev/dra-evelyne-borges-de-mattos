@@ -29,7 +29,7 @@ export default function Procedures() {
         <div className="mt-12 space-y-4 md:mt-14">
           {PROCEDURES.map((procedure, index) => (
             <Rise key={procedure.slug} delay={(index % 4) + 1}>
-              <article className="border border-espresso/10 border-l-4 border-l-clay bg-white transition hover:border-clay/40 hover:shadow-[0_12px_40px_-20px_rgba(196,91,79,0.35)]">
+              <article className="border border-espresso/10 border-l-4 border-l-clay bg-white transition hover:border-clay/50 hover:shadow-[0_12px_40px_-20px_rgba(154,118,100,0.35)]">
                 <div className="grid gap-6 p-5 md:grid-cols-[140px_1fr] md:items-start md:gap-8 md:p-7 lg:grid-cols-[160px_220px_1fr]">
                   <div className="flex items-center gap-4 md:block">
                     <Link to={categoryPath(procedure.slug)} className="relative size-24 shrink-0 overflow-hidden md:size-36 lg:size-40">

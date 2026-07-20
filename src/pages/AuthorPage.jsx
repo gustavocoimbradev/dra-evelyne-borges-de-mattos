@@ -89,14 +89,14 @@ export default function AuthorPage() {
         <BreadcrumbBar>
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link to="/" className="transition hover:text-white">
+              <Link to="/" className="transition hover:text-espresso">
                 Início
               </Link>
             </li>
-            <li aria-hidden="true" className="text-white/50">
+            <li aria-hidden="true" className="text-espresso/40">
               /
             </li>
-            <li className="text-white">{AUTHOR.shortName}</li>
+            <li className="text-espresso">{AUTHOR.shortName}</li>
           </ol>
         </BreadcrumbBar>
 

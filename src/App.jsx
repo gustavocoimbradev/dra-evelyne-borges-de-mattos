@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import CategoryPage from './pages/CategoryPage'
 import ProcedurePage from './pages/ProcedurePage'
 import AuthorPage from './pages/AuthorPage'
+import CouplePage from './pages/CouplePage'
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation()
@@ -48,6 +49,8 @@ export default function App() {
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/casal-da-plastica" element={<CouplePage />} />
+        <Route path="/casal-da-plastica/" element={<CouplePage />} />
         <Route path="/autora/:authorSlug" element={<AuthorPage />} />
         <Route path="/autora/:authorSlug/" element={<AuthorPage />} />
         <Route path="/procedimentos/:categorySlug" element={<CategoryPage />} />

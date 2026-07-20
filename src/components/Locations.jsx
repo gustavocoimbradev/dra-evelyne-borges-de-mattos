@@ -1,6 +1,7 @@
 import { LOCATIONS } from '../data/content'
 import Button from './Button'
 import Rise from './Reveal'
+import PhotoCredit from './PhotoCredit'
 
 const online = LOCATIONS.find((item) => item.id === 'online')
 const presencial = LOCATIONS.find((item) => item.id === 'presencial')
@@ -77,6 +78,9 @@ export default function Locations() {
                   className="h-full w-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/40 to-espresso/15" />
+                <div className="absolute inset-x-0 bottom-0 z-10 px-4 pb-3">
+                  <PhotoCredit tone="dark" />
+                </div>
               </div>
               <div className="relative flex flex-1 flex-col p-6 text-center md:p-8 md:text-left">
                 <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-rose">
@@ -89,7 +93,7 @@ export default function Locations() {
                   {presencial.description}
                 </p>
                 {presencial.address ? (
-                  <div className="mt-6 border border-porcelain/10 border-l-2 border-l-clay bg-espresso-soft/80 px-4 py-3.5 text-center md:text-left">
+                  <div className="mt-6 border border-porcelain/10 border-l-2 border-l-rose bg-espresso-soft/80 px-4 py-3.5 text-center md:text-left">
                     <p className="text-[10px] font-semibold tracking-[0.18em] uppercase text-rose">
                       Endereço
                     </p>
@@ -108,7 +112,7 @@ export default function Locations() {
                       key={point}
                       className="flex items-center justify-center gap-2.5 text-sm text-porcelain/85 md:justify-start"
                     >
-                      <span className="size-1.5 shrink-0 bg-clay" aria-hidden="true" />
+                      <span className="size-1.5 shrink-0 bg-rose" aria-hidden="true" />
                       {point}
                     </li>
                   ))}

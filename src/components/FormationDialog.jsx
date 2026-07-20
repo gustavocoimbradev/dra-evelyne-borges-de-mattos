@@ -85,12 +85,12 @@ export default function FormationDialog({ triggerVariant = 'outline', triggerCla
                   const number = String(index + 1).padStart(2, '0')
                   return (
                     <li key={`${item.place}-${item.year}`} className="flex gap-3.5 sm:gap-4">
-                      <div className="grid size-11 shrink-0 place-items-center bg-clay text-white sm:size-12 [&_svg]:size-5 [&_svg]:brightness-0 [&_svg]:invert">
+                      <div className="grid size-11 shrink-0 place-items-center bg-espresso text-porcelain sm:size-12 [&_svg]:size-5">
                         <Icon />
                       </div>
                       <div className="min-w-0 flex-1 border border-clay/15 bg-white p-4">
                         <div className="flex flex-wrap items-center gap-2.5">
-                          <span className="bg-clay px-2.5 py-1 text-[10px] font-semibold tracking-[0.2em] uppercase text-white">
+                          <span className="bg-sand px-2.5 py-1 text-[10px] font-semibold tracking-[0.2em] uppercase text-espresso">
                             {item.year}
                           </span>
                           <span className="font-display text-sm text-stone/45">{number}</span>

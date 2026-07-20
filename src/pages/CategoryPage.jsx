@@ -57,14 +57,14 @@ export default function CategoryPage() {
         <BreadcrumbBar>
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link to="/" className="transition hover:text-white">
+              <Link to="/" className="transition hover:text-espresso">
                 Início
               </Link>
             </li>
-            <li aria-hidden="true" className="text-white/50">
+            <li aria-hidden="true" className="text-espresso/40">
               /
             </li>
-            <li className="text-white">{category.title}</li>
+            <li className="text-espresso">{category.title}</li>
           </ol>
         </BreadcrumbBar>
 

@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <section id="topo" className="relative flex min-h-[100svh] overflow-hidden bg-porcelain">
       <div className="absolute inset-0 hero-fade">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_10%,rgba(196,91,79,0.22),transparent_45%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_100%,rgba(232,208,200,0.7),transparent_40%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_10%,rgba(214,177,158,0.45),transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_0%_100%,rgba(244,200,175,0.55),transparent_40%)]" />
 
         <img
           src="/assets/images/header-evelyne.png"
@@ -50,13 +50,13 @@ export default function Hero() {
               href={WHATSAPP.presencial}
               variant="outline"
               icon="pin"
-              className="ring-clay/40 hover:bg-clay/10"
+              className="ring-clay/40 hover:bg-clay/15"
             >
               Consulta presencial
             </Button>
           </div>
 
-          <div className="hero-rise hero-d4 mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-x-4 gap-y-2 border-t-2 border-clay/30 pt-4 text-[11px] tracking-[0.2em] uppercase text-espresso/60 md:w-fit md:justify-start md:gap-6">
+          <div className="hero-rise hero-d4 mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-x-4 gap-y-2 border-t-2 border-clay/40 pt-4 text-[11px] tracking-[0.2em] uppercase text-espresso/60 md:w-fit md:justify-start md:gap-6">
             <span>CRM-MG 63.834</span>
             <span className="size-1 rounded-full bg-clay" aria-hidden="true" />
             <span>RQE 50.611</span>

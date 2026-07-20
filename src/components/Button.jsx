@@ -8,12 +8,12 @@ import {
 } from './Icons'
 
 const styles = {
-  filled: 'bg-clay text-white hover:bg-clay-deep',
+  filled: 'bg-espresso text-porcelain hover:bg-espresso-soft',
   ghost: 'bg-transparent text-porcelain ring-1 ring-porcelain/50 hover:bg-porcelain/10',
-  outline: 'bg-transparent text-espresso ring-1 ring-clay/35 hover:bg-clay/10',
-  soft: 'bg-porcelain text-espresso ring-1 ring-clay/20 hover:bg-rose',
+  outline: 'bg-transparent text-espresso ring-1 ring-clay-deep/40 hover:bg-clay/25',
+  soft: 'bg-porcelain text-espresso ring-1 ring-clay/40 hover:bg-rose',
   dark: 'bg-espresso text-porcelain hover:bg-espresso-soft',
-  line: 'bg-transparent text-espresso underline decoration-clay/50 underline-offset-8 hover:decoration-clay',
+  line: 'bg-transparent text-espresso underline decoration-clay-deep/50 underline-offset-8 hover:decoration-clay-deep',
 }
 
 const ICONS = {

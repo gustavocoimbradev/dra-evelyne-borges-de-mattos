@@ -45,8 +45,10 @@ export function authorPersonSchema() {
     hasCredential: [AUTHOR.crm, AUTHOR.rqe, AUTHOR.credentials],
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'Av. Castelo Branco, 245 - Salas 304 e 305 - Vila Verde',
       addressLocality: 'Varginha',
       addressRegion: 'MG',
+      postalCode: '37012-005',
       addressCountry: 'BR',
     },
     sameAs: AUTHOR.sameAs,

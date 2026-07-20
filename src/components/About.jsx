@@ -8,7 +8,7 @@ export default function About() {
         <Rise className="relative z-0 lg:col-span-5 lg:pr-6">
           <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
             <div
-              className="absolute -right-3 -bottom-3 h-full w-full bg-clay/15 md:-right-4 md:-bottom-4"
+              className="absolute -right-3 -bottom-3 h-full w-full bg-nude/50 md:-right-4 md:-bottom-4"
               aria-hidden="true"
             />
             <div
