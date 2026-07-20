@@ -25,7 +25,7 @@ export default function Header() {
     <>
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-          scrolled ? 'bg-espresso/90 backdrop-blur-md' : 'bg-transparent'
+          scrolled ? 'border-b border-clay/15 bg-porcelain/95 backdrop-blur-md' : 'bg-transparent'
         }`}
       >
         <div className="mx-auto flex h-[4.5rem] max-w-[1400px] items-center justify-between px-5 md:h-20 md:px-8 lg:px-12">
@@ -33,7 +33,7 @@ export default function Header() {
             <img
               src="/assets/images/logo.webp"
               alt="Dra. Evelyne Borges de Mattos"
-              className="h-8 w-auto md:h-9"
+              className="h-8 w-auto brightness-0 md:h-9"
             />
           </a>
 
@@ -43,7 +43,7 @@ export default function Header() {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-[13px] font-medium tracking-[0.14em] uppercase text-porcelain/80 transition hover:text-porcelain"
+                  className="text-[13px] font-medium tracking-[0.14em] uppercase text-stone transition hover:text-clay"
                 >
                   {item.label}
                 </a>
@@ -56,7 +56,7 @@ export default function Header() {
 
           <button
             type="button"
-            className="relative z-20 grid size-10 place-items-center text-porcelain lg:hidden"
+            className="relative z-20 grid size-10 place-items-center text-espresso lg:hidden"
             aria-label={open ? 'Fechar' : 'Menu'}
             onClick={() => setOpen((v) => !v)}
           >
@@ -66,7 +66,7 @@ export default function Header() {
       </header>
 
       <div
-        className={`fixed inset-0 z-40 bg-espresso transition-transform duration-500 lg:hidden ${
+        className={`fixed inset-0 z-40 bg-porcelain transition-transform duration-500 lg:hidden ${
           open ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
@@ -76,7 +76,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="font-display text-4xl text-porcelain transition hover:text-rose sm:text-5xl"
+              className="font-display text-4xl text-espresso transition hover:text-clay sm:text-5xl"
             >
               {item.label}
             </a>

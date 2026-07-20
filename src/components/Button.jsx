@@ -10,9 +10,9 @@ import {
 const styles = {
   filled: 'bg-clay text-white hover:bg-clay-deep',
   ghost: 'bg-transparent text-porcelain ring-1 ring-porcelain/50 hover:bg-porcelain/10',
-  outline: 'bg-transparent text-espresso ring-1 ring-espresso/20 hover:bg-espresso/5',
+  outline: 'bg-transparent text-espresso ring-1 ring-clay/35 hover:bg-clay/10',
+  soft: 'bg-porcelain text-espresso ring-1 ring-clay/20 hover:bg-rose',
   dark: 'bg-espresso text-porcelain hover:bg-espresso-soft',
-  soft: 'bg-porcelain text-espresso hover:bg-rose',
   line: 'bg-transparent text-espresso underline decoration-clay/50 underline-offset-8 hover:decoration-clay',
 }
 

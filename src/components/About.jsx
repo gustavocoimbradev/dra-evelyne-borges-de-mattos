@@ -12,24 +12,25 @@ const FORMATION_ICONS = {
 
 export default function About() {
   return (
-    <section id="quemsoueu" className="bg-mist">
+    <section id="quemsoueu" className="bg-white">
       <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-16 md:px-8 lg:grid-cols-12 lg:gap-14 lg:px-12 lg:py-20">
         <Rise className="relative z-0 lg:col-span-5 lg:pr-6">
           <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
-            {/* Acento discreto atrás da foto */}
             <div
-              className="absolute -right-2 -bottom-2 h-full w-full border border-clay/20 md:-right-3 md:-bottom-3"
+              className="absolute -right-3 -bottom-3 h-full w-full bg-clay/15 md:-right-4 md:-bottom-4"
               aria-hidden="true"
             />
-
+            <div
+              className="absolute -top-3 -left-3 h-16 w-16 border-t-2 border-l-2 border-clay md:-top-4 md:-left-4"
+              aria-hidden="true"
+            />
             <div className="relative aspect-[4/5] max-h-[560px] overflow-hidden bg-porcelain">
               <img
                 src="/assets/images/evelyne.webp"
                 alt="Dra. Evelyne Borges de Mattos"
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-espresso/40 to-transparent" />
-
+              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-espresso/55 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4 md:p-5">
                 <p className="text-[10px] font-medium tracking-[0.22em] uppercase text-porcelain">
                   SBCP · AMB
@@ -42,12 +43,14 @@ export default function About() {
 
         <div className="flex flex-col justify-center lg:col-span-7 lg:pl-4">
           <Rise>
-            <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-clay">Quem sou eu</p>
+            <div className="flex items-center gap-3">
+              <span className="h-px w-8 bg-clay" aria-hidden="true" />
+              <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-clay">Quem sou eu</p>
+            </div>
             <h2 className="mt-3 max-w-xl font-display text-3xl leading-[1.05] tracking-[-0.02em] text-espresso md:text-4xl lg:text-5xl">
               Especialista em remodelar confiança
             </h2>
           </Rise>
-
           <Rise delay={1} className="mt-6 max-w-lg space-y-4 text-base leading-relaxed text-stone">
             <p>
               Cirurgiã Plástica especialista pela Sociedade Brasileira de Cirurgia Plástica (SBCP) e
@@ -55,33 +58,31 @@ export default function About() {
             </p>
             <p>Atuação em Cirurgia Plástica estética e reparadora.</p>
           </Rise>
-
-          <Rise delay={2} className="mt-8 grid max-w-md grid-cols-2 gap-6 border-y border-espresso/10 py-5">
+          <Rise delay={2} className="mt-8 grid max-w-md grid-cols-2 gap-6 border-y-2 border-clay/20 py-6">
             <div>
-              <p className="font-display text-2xl text-espresso">63.834</p>
+              <p className="font-display text-3xl text-clay">63.834</p>
               <p className="mt-1 text-xs tracking-[0.15em] uppercase text-stone">CRM-MG</p>
             </div>
             <div>
-              <p className="font-display text-2xl text-espresso">50.611</p>
+              <p className="font-display text-3xl text-clay">50.611</p>
               <p className="mt-1 text-xs tracking-[0.15em] uppercase text-stone">RQE</p>
             </div>
           </Rise>
-
           <Rise delay={3} className="mt-8">
-            <Button href={SOCIAL.lattes} variant="dark" icon="lattes">
+            <Button href={SOCIAL.lattes} variant="outline" icon="lattes">
               Currículo Lattes
             </Button>
           </Rise>
         </div>
       </div>
 
-      <div className="relative overflow-hidden border-t border-espresso/10 bg-espresso">
+      <div className="relative overflow-hidden bg-espresso">
         <div
-          className="pointer-events-none absolute -right-20 top-0 h-64 w-64 rounded-full border border-clay/20"
+          className="pointer-events-none absolute -right-16 top-10 size-64 rounded-full border border-clay/25"
           aria-hidden="true"
         />
         <div
-          className="pointer-events-none absolute -left-16 bottom-0 h-48 w-48 rounded-full bg-clay/10"
+          className="pointer-events-none absolute -left-10 bottom-0 size-40 bg-clay/15"
           aria-hidden="true"
         />
 
@@ -102,37 +103,35 @@ export default function About() {
 
           <ol className="relative mt-12 space-y-5 md:mt-14 md:space-y-0">
             <span
-              className="absolute top-6 bottom-6 left-6 w-px -translate-x-1/2 bg-gradient-to-b from-clay via-clay/50 to-porcelain/10 md:left-7"
+              className="absolute top-6 bottom-6 left-6 w-px -translate-x-1/2 bg-gradient-to-b from-clay via-clay/50 to-porcelain/15 md:left-7"
               aria-hidden="true"
             />
-
             {FORMATION.map((item, index) => {
               const Icon = FORMATION_ICONS[item.icon] || IconGraduation
               const number = String(index + 1).padStart(2, '0')
-
               return (
                 <Rise key={`${item.place}-${item.year}`} delay={(index % 4) + 1}>
                   <li className="relative flex gap-4 py-0 md:grid md:grid-cols-[auto_1fr] md:gap-8 md:py-6">
                     <div className="relative z-10 flex shrink-0 flex-col items-center gap-2">
-                      <div className="grid size-12 place-items-center bg-clay text-porcelain ring-[6px] ring-espresso md:size-14 [&_svg]:size-6 [&_svg]:brightness-0 [&_svg]:invert">
+                      <div className="grid size-12 place-items-center bg-clay text-white ring-[6px] ring-espresso md:size-14 [&_svg]:size-6 [&_svg]:brightness-0 [&_svg]:invert">
                         <Icon />
                       </div>
                       <span className="font-display text-sm text-porcelain/30 md:hidden">{number}</span>
                     </div>
-
                     <div className="min-w-0 flex-1 border border-porcelain/10 bg-white/[0.04] p-4 sm:p-5 md:flex md:items-start md:gap-8 md:p-6">
                       <span className="hidden shrink-0 font-display text-4xl leading-none text-porcelain/20 md:block">
                         {number}
                       </span>
-
                       <div className="min-w-0 flex-1">
-                        <span className="inline-flex bg-clay/25 px-3 py-1 text-[10px] font-semibold tracking-[0.2em] uppercase text-rose">
+                        <span className="inline-flex bg-clay px-3 py-1 text-[10px] font-semibold tracking-[0.2em] uppercase text-white">
                           {item.year}
                         </span>
                         <h4 className="mt-3 font-display text-xl leading-snug text-porcelain md:text-2xl">
                           {item.place}
                         </h4>
-                        <p className="mt-2 text-sm leading-relaxed text-porcelain/75 md:text-base">{item.detail}</p>
+                        <p className="mt-2 text-sm leading-relaxed text-porcelain/70 md:text-base">
+                          {item.detail}
+                        </p>
                       </div>
                     </div>
                   </li>

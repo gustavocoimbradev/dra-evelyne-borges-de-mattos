@@ -5,6 +5,7 @@ import { IconFacebook, IconInstagram } from './Icons'
 export default function Footer() {
   return (
     <footer id="colophon" className="bg-espresso text-porcelain">
+      <div className="h-1.5 bg-clay" />
       <div className="mx-auto max-w-[1400px] px-5 py-14 md:px-8 lg:px-12 lg:py-16">
         <div className="grid gap-10 border-b border-porcelain/10 pb-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
@@ -28,7 +29,7 @@ export default function Footer() {
 
           <div className="grid gap-10 sm:grid-cols-2 lg:col-span-7 lg:grid-cols-3">
             <div>
-              <p className="text-[11px] tracking-[0.2em] uppercase text-porcelain/40">Navegação</p>
+              <p className="text-[11px] tracking-[0.2em] uppercase text-rose">Navegação</p>
               <ul className="mt-5 space-y-3">
                 {NAV_ITEMS.map((item) => (
                   <li key={item.href}>
@@ -41,7 +42,7 @@ export default function Footer() {
             </div>
 
             <div id="botao-facebook-instagram">
-              <p className="text-[11px] tracking-[0.2em] uppercase text-porcelain/40">Social</p>
+              <p className="text-[11px] tracking-[0.2em] uppercase text-rose">Social</p>
               <ul className="mt-5 space-y-3">
                 <li>
                   <a
@@ -69,7 +70,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <p className="text-[11px] tracking-[0.2em] uppercase text-porcelain/40">Registro</p>
+              <p className="text-[11px] tracking-[0.2em] uppercase text-rose">Registro</p>
               <p className="mt-5 text-sm leading-relaxed text-porcelain/70">
                 CRM-MG 63.834
                 <br />

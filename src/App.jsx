@@ -13,7 +13,7 @@ export default function App() {
   const [activeVideo, setActiveVideo] = useState(null)
 
   return (
-    <>
+    <div className="min-h-svh bg-porcelain text-espresso">
       <Header />
       <main>
         <Hero />
@@ -29,6 +29,6 @@ export default function App() {
         onClose={() => setActiveVideo(null)}
         onChange={setActiveVideo}
       />
-    </>
+    </div>
   )
 }
