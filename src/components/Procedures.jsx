@@ -67,11 +67,11 @@ export default function Procedures() {
           ))}
         </div>
 
-        <Rise className="mt-10 flex flex-col items-start gap-4 border-t border-espresso/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <Rise className="mt-10 flex flex-col items-stretch gap-4 border-t border-espresso/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-md text-sm text-stone">
             Quer saber qual procedimento combina com o seu objetivo? Agende uma avaliação.
           </p>
-          <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
             <Button href={WHATSAPP.online} variant="filled" icon="globe">
               Consulta online
             </Button>

@@ -20,14 +20,17 @@ export default function Hero() {
 
         <div className="absolute inset-0 bg-gradient-to-r from-espresso via-espresso/78 to-espresso/35 md:to-espresso/15" />
 
-        {/* Mobile: retrato só na faixa superior, sem brigar com o texto */}
-        <div className="absolute inset-x-0 top-0 h-[52svh] overflow-hidden md:hidden">
+        {/* Mobile: retrato full-bleed + overlay inferior para o texto */}
+        <div className="absolute inset-0 overflow-hidden md:hidden">
           <img
             src="/assets/images/header-evelyne.png"
             alt=""
             className="absolute inset-0 h-full w-full object-cover object-[58%_top]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/25 to-espresso/20" />
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-espresso from-20% via-espresso/80 via-45% to-espresso/15"
+            aria-hidden="true"
+          />
         </div>
 
         {/* Desktop: pessoa inteira à direita */}
@@ -37,8 +40,6 @@ export default function Hero() {
           className="absolute inset-0 hidden h-full w-full object-contain object-right object-bottom md:block"
         />
 
-        {/* Scrim: mobile sólido sob o texto; desktop fade suave */}
-        <div className="absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-t from-espresso from-35% via-espresso/95 to-transparent md:hidden" />
         <div className="absolute inset-0 hidden bg-gradient-to-t from-espresso via-transparent to-espresso/25 md:block" />
         <div className="noise absolute inset-0 opacity-[0.08] mix-blend-overlay" />
       </div>
@@ -67,8 +68,8 @@ export default function Hero() {
             </Button>
           </div>
 
-          <div className="hero-rise hero-d4 mt-7 w-fit border-t border-porcelain/20 pt-4 text-[11px] tracking-[0.2em] uppercase text-porcelain/65 md:mt-8 md:border-porcelain/15 md:text-porcelain/50">
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          <div className="hero-rise hero-d4 mt-7 w-full border-t border-porcelain/20 pt-4 text-center text-[11px] tracking-[0.2em] uppercase text-porcelain/65 md:mt-8 md:w-fit md:border-porcelain/15 md:text-left md:text-porcelain/50">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 md:justify-start">
               <span>CRM-MG 63.834</span>
               <span>RQE 50.611</span>
               <span>Varginha · MG</span>

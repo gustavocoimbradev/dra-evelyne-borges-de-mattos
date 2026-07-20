@@ -65,15 +65,21 @@ export default function Videos({ onOpenVideo }) {
       </section>
 
       <section id="posts" className="bg-clay">
-        <div className="mx-auto flex max-w-[1400px] flex-col items-start justify-between gap-6 px-5 py-10 md:flex-row md:items-center md:px-8 lg:px-12">
+        <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-6 px-5 py-10 text-center md:flex-row md:items-center md:justify-between md:px-8 md:text-left lg:px-12">
           <Rise>
             <h2 className="font-display text-2xl text-white md:text-3xl">
               Bastidores no Instagram
             </h2>
             <p className="mt-1 text-sm text-white/75">@draevelyneborgesdemattos</p>
           </Rise>
-          <Rise delay={2}>
-            <Button href={SOCIAL.instagram} variant="soft" id="botao-instagram" icon="instagram">
+          <Rise delay={2} className="w-full md:w-auto">
+            <Button
+              href={SOCIAL.instagram}
+              variant="soft"
+              id="botao-instagram"
+              icon="instagram"
+              className="!w-full md:!w-auto"
+            >
               Seguir no Instagram
             </Button>
           </Rise>
