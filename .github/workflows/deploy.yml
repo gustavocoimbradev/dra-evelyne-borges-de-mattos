@@ -40,4 +40,4 @@ jobs:
         run: aws s3 sync ./dist s3://draevelyneborgesdemattos --delete
 
       - name: Limpar cache do CloudFront
-        run: aws cloudfront create-invalidation --distribution-id E2Q698Z68H5ZHB --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id EBSSA2GE5SD8Y --paths "/*"
