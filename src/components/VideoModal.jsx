@@ -5,7 +5,13 @@ import { IconClose } from './Icons'
 function IconChevronUp({ className }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M6 15L12 9L18 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M6 15L12 9L18 15"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }
@@ -13,7 +19,13 @@ function IconChevronUp({ className }) {
 function IconChevronDown({ className }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M6 9L12 15L18 9"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   )
 }
@@ -145,33 +157,33 @@ export default function VideoModal({ video, onClose, onChange }) {
   if (!video) return null
 
   return (
-    <div className="lightbox fixed inset-0 z-[100]" role="dialog" aria-modal="true" aria-label="Reels de vídeos">
+    <div
+      className="lightbox fixed inset-0 z-[100] flex items-center justify-center"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Vídeos"
+    >
       <button
         type="button"
-        className="lightbox-backdrop absolute inset-0 bg-espresso/85 backdrop-blur-md"
+        className="lightbox-backdrop absolute inset-0 bg-espresso/90 backdrop-blur-md"
         aria-label="Fechar"
         onClick={onClose}
       />
 
-      <div className="lightbox-panel relative z-10 mx-auto flex h-full w-full max-w-[430px] flex-col px-2 pt-[max(0.75rem,env(safe-area-inset-top))] pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-4 sm:py-6">
-        <div className="mb-2 flex shrink-0 items-center justify-between gap-3 sm:mb-3">
-          <p className="text-[10px] font-medium tracking-[0.28em] uppercase text-rose/80">
-            {String(activeIndex + 1).padStart(2, '0')} / {String(VIDEOS.length).padStart(2, '0')}
-          </p>
-          <button
-            type="button"
-            className="grid size-11 shrink-0 place-items-center rounded-full border border-porcelain/20 bg-porcelain/10 text-porcelain transition hover:bg-porcelain/20"
-            aria-label="Fechar"
-            onClick={onClose}
-          >
-            <IconClose className="size-5" />
-          </button>
-        </div>
+      <button
+        type="button"
+        className="absolute top-[max(1rem,env(safe-area-inset-top))] right-[max(1rem,env(safe-area-inset-right))] z-20 grid size-11 place-items-center rounded-full bg-porcelain/15 text-porcelain ring-1 ring-porcelain/25 backdrop-blur-sm transition hover:bg-clay hover:ring-clay"
+        aria-label="Fechar"
+        onClick={onClose}
+      >
+        <IconClose className="size-5" />
+      </button>
 
-        <div className="relative mx-auto flex min-h-0 w-full max-w-[380px] flex-1">
+      <div className="lightbox-panel relative z-10 flex h-full w-full items-center justify-center px-4">
+        <div className="relative">
           <div
             ref={scrollerRef}
-            className="hide-scrollbar h-full w-full overflow-y-auto overscroll-y-contain rounded-[1.25rem] ring-1 ring-porcelain/15 sm:rounded-[1.5rem]"
+            className="hide-scrollbar h-[min(78svh,640px)] w-[min(calc(100vw-2rem),360px)] overflow-y-auto overscroll-y-contain rounded-[1.5rem] bg-black shadow-[0_24px_80px_-24px_rgba(0,0,0,0.65)] ring-1 ring-porcelain/15"
             style={{ scrollSnapType: 'y mandatory', WebkitOverflowScrolling: 'touch' }}
           >
             {VIDEOS.map((item, index) => (
@@ -181,13 +193,8 @@ export default function VideoModal({ video, onClose, onChange }) {
                 ref={(node) => {
                   slideRefs.current[index] = node
                 }}
-                className="relative h-full w-full shrink-0 snap-start snap-always bg-black"
-                style={{ minHeight: '100%' }}
+                className="relative h-[min(78svh,640px)] w-full shrink-0 snap-start snap-always bg-black"
               >
-                <div className="absolute inset-x-0 top-0 z-10 flex justify-center pt-3">
-                  <span className="h-1 w-14 rounded-full bg-porcelain/25" />
-                </div>
-
                 {index === activeIndex ? (
                   <iframe
                     key={`${item.youtubeId}-play`}
@@ -199,20 +206,24 @@ export default function VideoModal({ video, onClose, onChange }) {
                   />
                 ) : (
                   <div className="relative h-full w-full">
-                    <img src={item.thumbnail} alt="" className="h-full w-full object-cover opacity-70" />
-                    <div className="absolute inset-0 bg-espresso/35" />
+                    <img
+                      src={item.thumbnail}
+                      alt=""
+                      className="h-full w-full object-cover opacity-60"
+                    />
+                    <div className="absolute inset-0 bg-espresso/40" />
                   </div>
                 )}
               </div>
             ))}
           </div>
 
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-20 flex flex-col items-center justify-center gap-2 pr-2 sm:pr-0 sm:translate-x-[calc(100%+0.75rem)]">
+          <div className="pointer-events-none absolute inset-y-0 right-3 z-10 flex flex-col items-center justify-center gap-2.5">
             <button
               type="button"
               onClick={() => goTo(activeIndexRef.current - 1)}
               disabled={activeIndex === 0}
-              className="pointer-events-auto grid size-11 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25"
+              className="pointer-events-auto grid size-10 place-items-center rounded-full bg-espresso/70 text-porcelain ring-1 ring-porcelain/20 backdrop-blur-sm transition hover:bg-clay disabled:pointer-events-none disabled:opacity-25"
               aria-label="Vídeo anterior"
             >
               <IconChevronUp className="size-5" />
@@ -221,17 +232,13 @@ export default function VideoModal({ video, onClose, onChange }) {
               type="button"
               onClick={() => goTo(activeIndexRef.current + 1)}
               disabled={activeIndex === VIDEOS.length - 1}
-              className="pointer-events-auto grid size-11 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25"
+              className="pointer-events-auto grid size-10 place-items-center rounded-full bg-espresso/70 text-porcelain ring-1 ring-porcelain/20 backdrop-blur-sm transition hover:bg-clay disabled:pointer-events-none disabled:opacity-25"
               aria-label="Próximo vídeo"
             >
               <IconChevronDown className="size-5" />
             </button>
           </div>
         </div>
-
-        <p className="mt-2 hidden shrink-0 text-center text-[10px] tracking-[0.18em] uppercase text-porcelain/40 sm:block">
-          Arraste ou role para cima / baixo
-        </p>
       </div>
     </div>
   )
