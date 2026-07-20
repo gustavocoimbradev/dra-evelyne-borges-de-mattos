@@ -1,5 +1,25 @@
 # Dra. Evelyne Borges de Mattos
 
-PRODUCTION URL
+Site em React + Vite + Tailwind — redesign contemporâneo.
 
-	https://draevelyneborgesdemattos.com.br/
+**Produção:** https://draevelyneborgesdemattos.com.br/
+
+## Desenvolvimento
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Direção visual
+
+- Tipografia: **Fraunces** (display) + **Outfit** (UI)
+- Paleta: espresso, clay/terracotta, porcelain
+- Layout editorial com seções imersivas, timeline de formação e procedimentos interativos

@@ -1,0 +1,28 @@
+const styles = {
+  filled: 'bg-clay text-white hover:bg-clay-deep',
+  ghost: 'bg-transparent text-porcelain ring-1 ring-porcelain/50 hover:bg-porcelain/10',
+  dark: 'bg-espresso text-porcelain hover:bg-espresso-soft',
+  soft: 'bg-porcelain text-espresso hover:bg-rose',
+  line: 'bg-transparent text-espresso underline decoration-clay/50 underline-offset-8 hover:decoration-clay',
+}
+
+export default function Button({
+  href,
+  children,
+  variant = 'filled',
+  className = '',
+  target = '_blank',
+  id,
+}) {
+  return (
+    <a
+      id={id}
+      href={href}
+      target={target}
+      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+      className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-medium tracking-wide transition duration-300 ${styles[variant]} ${className}`}
+    >
+      {children}
+    </a>
+  )
+}

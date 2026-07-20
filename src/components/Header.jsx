@@ -1,0 +1,101 @@
+import { useEffect, useState } from 'react'
+import { NAV_ITEMS, WHATSAPP } from '../data/content'
+import { IconClose, IconMenu } from './Icons'
+
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [open])
+
+  return (
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+          scrolled ? 'bg-espresso/90 backdrop-blur-md' : 'bg-transparent'
+        }`}
+      >
+        <div className="mx-auto flex h-[4.5rem] max-w-[1400px] items-center justify-between px-5 md:h-20 md:px-8 lg:px-12">
+          <a href="#topo" className="relative z-20" onClick={() => setOpen(false)}>
+            <img
+              src="/assets/images/logo.webp"
+              alt="Dra. Evelyne Borges de Mattos"
+              className="h-8 w-auto md:h-9"
+            />
+          </a>
+
+          <div className="hidden items-center gap-8 lg:flex">
+            <nav className="flex items-center gap-8" aria-label="Menu">
+              {NAV_ITEMS.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-[13px] font-medium tracking-[0.14em] uppercase text-porcelain/80 transition hover:text-porcelain"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+            <a
+              href={WHATSAPP.online}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-clay px-5 py-2.5 text-[13px] font-medium tracking-wide text-white transition hover:bg-clay-deep"
+            >
+              Agendar
+            </a>
+          </div>
+
+          <button
+            type="button"
+            className="relative z-20 grid size-10 place-items-center text-porcelain lg:hidden"
+            aria-label={open ? 'Fechar' : 'Menu'}
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <IconClose className="size-5" /> : <IconMenu className="size-5" />}
+          </button>
+        </div>
+      </header>
+
+      <div
+        className={`fixed inset-0 z-40 bg-espresso transition-transform duration-500 lg:hidden ${
+          open ? 'translate-y-0' : '-translate-y-full'
+        }`}
+      >
+        <nav className="flex h-full flex-col justify-center gap-2 px-8 pt-16">
+          {NAV_ITEMS.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={() => setOpen(false)}
+              className="font-display text-4xl text-porcelain transition hover:text-rose sm:text-5xl"
+            >
+              {item.label}
+            </a>
+          ))}
+          <a
+            href={WHATSAPP.online}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="mt-10 inline-flex w-fit bg-clay px-6 py-3 text-sm font-medium text-white"
+          >
+            Agendar consulta
+          </a>
+        </nav>
+      </div>
+    </>
+  )
+}
