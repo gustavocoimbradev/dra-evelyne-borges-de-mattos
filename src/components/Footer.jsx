@@ -17,10 +17,10 @@ export default function Footer() {
               Pronta para o próximo passo?
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button id="botao-consulta-online-rodape" href={WHATSAPP.online} variant="filled">
+              <Button id="botao-consulta-online-rodape" href={WHATSAPP.online} variant="filled" icon="globe">
                 Online
               </Button>
-              <Button id="botao-consulta-presencial-rodape" href={WHATSAPP.presencial} variant="ghost">
+              <Button id="botao-consulta-presencial-rodape" href={WHATSAPP.presencial} variant="ghost" icon="pin">
                 Presencial
               </Button>
             </div>

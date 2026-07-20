@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NAV_ITEMS, WHATSAPP } from '../data/content'
+import Button from './Button'
 import { IconClose, IconMenu } from './Icons'
 
 export default function Header() {
@@ -48,14 +49,9 @@ export default function Header() {
                 </a>
               ))}
             </nav>
-            <a
-              href={WHATSAPP.online}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-clay px-5 py-2.5 text-[13px] font-medium tracking-wide text-white transition hover:bg-clay-deep"
-            >
+            <Button href={WHATSAPP.online} variant="filled" icon="calendar" className="px-5 py-2.5 text-[13px]">
               Agendar
-            </a>
+            </Button>
           </div>
 
           <button
@@ -85,15 +81,15 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <a
+          <Button
             href={WHATSAPP.online}
-            target="_blank"
-            rel="noopener noreferrer"
+            variant="filled"
+            icon="calendar"
+            className="mt-10 w-fit"
             onClick={() => setOpen(false)}
-            className="mt-10 inline-flex w-fit bg-clay px-6 py-3 text-sm font-medium text-white"
           >
             Agendar consulta
-          </a>
+          </Button>
         </nav>
       </div>
     </>

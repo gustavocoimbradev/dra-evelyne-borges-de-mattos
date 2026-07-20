@@ -55,10 +55,10 @@ export default function Videos({ onOpenVideo }) {
         </div>
 
         <div className="mx-auto flex max-w-[1400px] flex-col gap-3 px-5 py-8 sm:flex-row md:px-8 lg:px-12">
-          <Button href={WHATSAPP.online} variant="dark">
+          <Button href={WHATSAPP.online} variant="dark" icon="globe">
             Consulta online
           </Button>
-          <Button href={WHATSAPP.presencial} variant="soft" className="ring-1 ring-espresso/10">
+          <Button href={WHATSAPP.presencial} variant="soft" className="ring-1 ring-espresso/10" icon="pin">
             Consulta presencial
           </Button>
         </div>
@@ -73,7 +73,7 @@ export default function Videos({ onOpenVideo }) {
             <p className="mt-1 text-sm text-white/75">@draevelyneborgesdemattos</p>
           </Rise>
           <Rise delay={2}>
-            <Button href={SOCIAL.instagram} variant="soft" id="botao-instagram">
+            <Button href={SOCIAL.instagram} variant="soft" id="botao-instagram" icon="instagram">
               Seguir no Instagram
             </Button>
           </Rise>

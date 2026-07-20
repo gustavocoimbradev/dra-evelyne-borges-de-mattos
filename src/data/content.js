@@ -138,19 +138,28 @@ export const VIDEOS = [
 export const LOCATIONS = [
   {
     id: 'online',
-    number: '01',
     title: 'Consulta online',
-    subtitle: 'Atendimento completo à distância, com a mesma atenção da consulta presencial.',
-    background: '/assets/images/bg-1.jpg',
-    cta: { label: 'Agendar online', href: WHATSAPP.online },
+    tagline: 'De onde você estiver',
+    description:
+      'Avaliação completa por videochamada, com a mesma atenção e cuidado da consulta no consultório.',
+    points: ['Horários flexíveis', 'Sem deslocamento', 'Atendimento pelo WhatsApp'],
+    cta: { label: 'Agendar consulta online', href: WHATSAPP.online },
+    image: '/assets/images/bg-1.jpg',
   },
   {
     id: 'presencial',
-    number: '02',
     title: 'Consulta presencial',
-    subtitle: 'Av. Castelo Branco, 245 — Sala 205 — Vila Verde, Varginha — MG, 37012-005',
-    background: '/assets/images/bg-2.webp',
-    cta: { label: 'Agendar presencial', href: WHATSAPP.presencial },
+    tagline: 'Consultório em Varginha',
+    description: 'Atendimento presencial no consultório, com avaliação detalhada e acompanhamento próximo.',
+    address: {
+      street: 'Av. Castelo Branco, 245 — Sala 205',
+      neighborhood: 'Vila Verde',
+      city: 'Varginha — MG',
+      zip: '37012-005',
+    },
+    points: ['Exame clínico presencial', 'Ambiente reservado', 'Centro de Varginha'],
+    cta: { label: 'Agendar consulta presencial', href: WHATSAPP.presencial },
+    image: '/assets/images/bg-2.webp',
   },
 ]
 

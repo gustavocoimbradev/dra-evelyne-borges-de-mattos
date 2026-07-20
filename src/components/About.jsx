@@ -16,50 +16,27 @@ export default function About() {
       <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-16 md:px-8 lg:grid-cols-12 lg:gap-14 lg:px-12 lg:py-20">
         <Rise className="relative z-0 lg:col-span-5 lg:pr-6">
           <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
+            {/* Acento discreto atrás da foto */}
             <div
-              className="absolute -right-3 -bottom-3 h-[92%] w-[92%] bg-clay/15 md:-right-5 md:-bottom-5"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute -top-3 -left-3 h-[40%] w-[40%] border border-clay/35 md:-top-4 md:-left-4"
+              className="absolute -right-2 -bottom-2 h-full w-full border border-clay/20 md:-right-3 md:-bottom-3"
               aria-hidden="true"
             />
 
-            <div className="relative aspect-[4/5] max-h-[560px] overflow-hidden">
+            <div className="relative aspect-[4/5] max-h-[560px] overflow-hidden bg-porcelain">
               <img
                 src="/assets/images/evelyne.webp"
                 alt="Dra. Evelyne Borges de Mattos"
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-espresso/35 via-transparent to-transparent" />
-
-              <span className="absolute top-4 left-4 h-8 w-8 border-t border-l border-porcelain/80" aria-hidden="true" />
-              <span className="absolute right-4 bottom-4 h-8 w-8 border-r border-b border-porcelain/80" aria-hidden="true" />
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-espresso/40 to-transparent" />
 
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4 md:p-5">
-                <p className="text-[10px] font-medium tracking-[0.22em] uppercase text-porcelain/90">
+                <p className="text-[10px] font-medium tracking-[0.22em] uppercase text-porcelain">
                   SBCP · AMB
                 </p>
-                <p className="font-display text-sm text-porcelain/90">Estética &amp; Reparadora</p>
+                <p className="font-display text-sm text-porcelain">Estética &amp; Reparadora</p>
               </div>
             </div>
-
-            <p
-              className="pointer-events-none absolute top-1/2 -right-2 hidden -translate-y-1/2 rotate-90 text-[10px] font-medium tracking-[0.35em] uppercase text-clay md:block lg:-right-3"
-              aria-hidden="true"
-            >
-              Dra. Evelyne
-            </p>
-
-            <svg
-              className="pointer-events-none absolute -top-6 -right-6 hidden size-28 text-clay/40 lg:block"
-              viewBox="0 0 100 100"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path d="M90 90 A70 70 0 0 0 20 20" stroke="currentColor" strokeWidth="1" />
-              <circle cx="20" cy="20" r="2.5" fill="currentColor" />
-            </svg>
           </div>
         </Rise>
 
@@ -91,7 +68,7 @@ export default function About() {
           </Rise>
 
           <Rise delay={3} className="mt-8">
-            <Button href={SOCIAL.lattes} variant="dark">
+            <Button href={SOCIAL.lattes} variant="dark" icon="lattes">
               Currículo Lattes
             </Button>
           </Rise>
