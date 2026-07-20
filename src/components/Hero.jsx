@@ -56,12 +56,12 @@ export default function Hero() {
             </Button>
           </div>
 
-          <div className="hero-rise hero-d4 mt-8 flex w-full flex-col gap-3 border-t-2 border-clay/30 pt-4 text-[11px] tracking-[0.2em] uppercase text-espresso/60 md:w-fit md:flex-row md:items-center md:gap-6">
-            <span className="text-center md:text-left">CRM-MG 63.834</span>
-            <span className="hidden size-1 rounded-full bg-clay md:inline-block" aria-hidden="true" />
-            <span className="text-center md:text-left">RQE 50.611</span>
-            <span className="hidden size-1 rounded-full bg-clay md:inline-block" aria-hidden="true" />
-            <span className="text-center md:text-left">Varginha · MG</span>
+          <div className="hero-rise hero-d4 mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-x-4 gap-y-2 border-t-2 border-clay/30 pt-4 text-[11px] tracking-[0.2em] uppercase text-espresso/60 md:w-fit md:justify-start md:gap-6">
+            <span>CRM-MG 63.834</span>
+            <span className="size-1 rounded-full bg-clay" aria-hidden="true" />
+            <span>RQE 50.611</span>
+            <span className="size-1 rounded-full bg-clay" aria-hidden="true" />
+            <span>Varginha · MG</span>
           </div>
         </div>
       </div>
