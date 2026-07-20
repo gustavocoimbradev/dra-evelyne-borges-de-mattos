@@ -173,10 +173,10 @@ export default function VideoModal({ video, onClose, onChange }) {
           </button>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[380px] flex-1">
+        <div className="relative mx-auto flex min-h-0 w-full max-w-[380px] flex-1 flex-col justify-center">
           <div
             ref={scrollerRef}
-            className="hide-scrollbar h-[min(72svh,640px)] overflow-y-auto overscroll-y-contain rounded-[1.5rem] ring-1 ring-porcelain/15"
+            className="hide-scrollbar mx-auto h-[min(62svh,560px)] w-full overflow-y-auto overscroll-y-contain rounded-[1.5rem] ring-1 ring-porcelain/15 sm:h-[min(72svh,640px)]"
             style={{ scrollSnapType: 'y mandatory', WebkitOverflowScrolling: 'touch' }}
           >
             {VIDEOS.map((item, index) => (
@@ -186,7 +186,7 @@ export default function VideoModal({ video, onClose, onChange }) {
                 ref={(node) => {
                   slideRefs.current[index] = node
                 }}
-                className="relative h-[min(72svh,640px)] w-full shrink-0 snap-start snap-always bg-black"
+                className="relative h-[min(62svh,560px)] w-full shrink-0 snap-start snap-always bg-black sm:h-[min(72svh,640px)]"
               >
                 <div className="absolute inset-x-0 top-0 z-10 flex justify-center pt-3">
                   <span className="h-1 w-14 rounded-full bg-porcelain/25" />
@@ -215,12 +215,13 @@ export default function VideoModal({ video, onClose, onChange }) {
             ))}
           </div>
 
-          <div className="absolute top-1/2 -right-1 z-20 flex -translate-y-1/2 flex-col gap-2 sm:-right-14">
+          {/* Mobile: setas abaixo do vídeo / Desktop: ao lado */}
+          <div className="mt-3 flex shrink-0 items-center justify-center gap-3 sm:absolute sm:top-1/2 sm:right-0 sm:mt-0 sm:-translate-y-1/2 sm:translate-x-[calc(100%+0.75rem)] sm:flex-col sm:gap-2">
             <button
               type="button"
               onClick={() => goTo(activeIndexRef.current - 1)}
               disabled={activeIndex === 0}
-              className="grid size-10 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25 sm:size-11"
+              className="grid size-11 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25"
               aria-label="Vídeo anterior"
             >
               <IconChevronUp className="size-5" />
@@ -229,7 +230,7 @@ export default function VideoModal({ video, onClose, onChange }) {
               type="button"
               onClick={() => goTo(activeIndexRef.current + 1)}
               disabled={activeIndex === VIDEOS.length - 1}
-              className="grid size-10 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25 sm:size-11"
+              className="grid size-11 place-items-center rounded-full border border-porcelain/15 bg-espresso/70 text-porcelain backdrop-blur-sm transition hover:bg-clay disabled:opacity-25"
               aria-label="Próximo vídeo"
             >
               <IconChevronDown className="size-5" />

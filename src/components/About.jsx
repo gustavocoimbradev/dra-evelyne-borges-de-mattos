@@ -100,9 +100,9 @@ export default function About() {
             </div>
           </Rise>
 
-          <ol className="relative mt-12 md:mt-14">
+          <ol className="relative mt-12 space-y-5 md:mt-14 md:space-y-0">
             <span
-              className="absolute top-6 bottom-6 left-[1.4rem] w-px bg-gradient-to-b from-clay via-clay/50 to-porcelain/10 md:left-[1.65rem]"
+              className="absolute top-6 bottom-6 left-6 w-px -translate-x-1/2 bg-gradient-to-b from-clay via-clay/50 to-porcelain/10 md:left-7"
               aria-hidden="true"
             />
 
@@ -112,15 +112,15 @@ export default function About() {
 
               return (
                 <Rise key={`${item.place}-${item.year}`} delay={(index % 4) + 1}>
-                  <li className="relative grid gap-4 py-5 md:grid-cols-[auto_1fr] md:gap-8 md:py-6">
-                    <div className="relative z-10 flex items-start gap-4 md:gap-5">
-                      <div className="grid size-12 shrink-0 place-items-center bg-clay text-porcelain ring-[6px] ring-espresso md:size-14 [&_svg]:size-6 [&_svg]:brightness-0 [&_svg]:invert">
+                  <li className="relative flex gap-4 py-0 md:grid md:grid-cols-[auto_1fr] md:gap-8 md:py-6">
+                    <div className="relative z-10 flex shrink-0 flex-col items-center gap-2">
+                      <div className="grid size-12 place-items-center bg-clay text-porcelain ring-[6px] ring-espresso md:size-14 [&_svg]:size-6 [&_svg]:brightness-0 [&_svg]:invert">
                         <Icon />
                       </div>
-                      <span className="pt-2 font-display text-2xl text-porcelain/25 md:hidden">{number}</span>
+                      <span className="font-display text-sm text-porcelain/30 md:hidden">{number}</span>
                     </div>
 
-                    <div className="border border-porcelain/10 bg-white/[0.04] p-5 md:flex md:items-start md:gap-8 md:p-6">
+                    <div className="min-w-0 flex-1 border border-porcelain/10 bg-white/[0.04] p-4 sm:p-5 md:flex md:items-start md:gap-8 md:p-6">
                       <span className="hidden shrink-0 font-display text-4xl leading-none text-porcelain/20 md:block">
                         {number}
                       </span>

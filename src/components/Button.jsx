@@ -43,7 +43,7 @@ export default function Button({
       target={target}
       rel={target === '_blank' ? 'noopener noreferrer' : undefined}
       onClick={onClick}
-      className={`inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-medium tracking-wide transition duration-300 ${styles[variant]} ${className}`}
+      className={`inline-flex w-full items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-medium tracking-wide transition duration-300 sm:w-auto ${styles[variant]} ${className}`}
     >
       {Icon ? <Icon className="size-4 shrink-0" /> : null}
       <span>{children}</span>

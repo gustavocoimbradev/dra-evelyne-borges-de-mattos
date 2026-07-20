@@ -50,7 +50,7 @@ export default function Header() {
               ))}
             </nav>
             <Button href={WHATSAPP.online} variant="filled" icon="calendar" className="px-5 py-2.5 text-[13px]">
-              Agendar
+              Agendar consulta
             </Button>
           </div>
 
@@ -85,7 +85,7 @@ export default function Header() {
             href={WHATSAPP.online}
             variant="filled"
             icon="calendar"
-            className="mt-10 w-fit"
+            className="mt-10"
             onClick={() => setOpen(false)}
           >
             Agendar consulta
