@@ -1,14 +1,21 @@
 import { FORMATION, SOCIAL } from '../data/content'
 import Button from './Button'
 import Rise from './Reveal'
+import { IconAward, IconDoctor, IconGraduation, IconHospital } from './Icons'
+
+const FORMATION_ICONS = {
+  hospital: IconHospital,
+  doctor: IconDoctor,
+  graduation: IconGraduation,
+  award: IconAward,
+}
 
 export default function About() {
   return (
     <section id="quemsoueu" className="bg-mist">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-16 md:px-8 lg:grid-cols-12 lg:gap-12 lg:px-12 lg:py-20">
-        <Rise className="lg:col-span-5">
+      <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-16 md:px-8 lg:grid-cols-12 lg:gap-14 lg:px-12 lg:py-20">
+        <Rise className="relative z-0 lg:col-span-5 lg:pr-6">
           <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
-            {/* Bloco de fundo offset */}
             <div
               className="absolute -right-3 -bottom-3 h-[92%] w-[92%] bg-clay/15 md:-right-5 md:-bottom-5"
               aria-hidden="true"
@@ -18,7 +25,6 @@ export default function About() {
               aria-hidden="true"
             />
 
-            {/* Moldura da foto */}
             <div className="relative aspect-[4/5] max-h-[560px] overflow-hidden">
               <img
                 src="/assets/images/evelyne.webp"
@@ -27,11 +33,9 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso/35 via-transparent to-transparent" />
 
-              {/* Cantos gráficos */}
               <span className="absolute top-4 left-4 h-8 w-8 border-t border-l border-porcelain/80" aria-hidden="true" />
               <span className="absolute right-4 bottom-4 h-8 w-8 border-r border-b border-porcelain/80" aria-hidden="true" />
 
-              {/* Faixa inferior */}
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4 md:p-5">
                 <p className="text-[10px] font-medium tracking-[0.22em] uppercase text-porcelain/90">
                   SBCP · AMB
@@ -40,7 +44,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Label vertical */}
             <p
               className="pointer-events-none absolute top-1/2 -right-2 hidden -translate-y-1/2 rotate-90 text-[10px] font-medium tracking-[0.35em] uppercase text-clay md:block lg:-right-3"
               aria-hidden="true"
@@ -48,7 +51,6 @@ export default function About() {
               Dra. Evelyne
             </p>
 
-            {/* Arco decorativo */}
             <svg
               className="pointer-events-none absolute -top-6 -right-6 hidden size-28 text-clay/40 lg:block"
               viewBox="0 0 100 100"
@@ -96,28 +98,71 @@ export default function About() {
         </div>
       </div>
 
-      <div className="border-t border-espresso/10 bg-porcelain">
-        <div className="mx-auto max-w-[1400px] px-5 py-14 md:px-8 lg:px-12 lg:py-16">
+      <div className="relative overflow-hidden border-t border-espresso/10 bg-espresso">
+        <div
+          className="pointer-events-none absolute -right-20 top-0 h-64 w-64 rounded-full border border-clay/20"
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute -left-16 bottom-0 h-48 w-48 rounded-full bg-clay/10"
+          aria-hidden="true"
+        />
+
+        <div className="relative mx-auto max-w-[1400px] px-5 py-14 md:px-8 lg:px-12 lg:py-16">
           <Rise>
-            <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-              <h3 className="font-display text-2xl tracking-[-0.02em] text-espresso md:text-3xl">Formação</h3>
-              <p className="max-w-sm text-sm text-stone">Uma trajetória construída em instituições de referência.</p>
+            <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-rose">Trajetória</p>
+                <h3 className="mt-2 font-display text-3xl tracking-[-0.02em] text-porcelain md:text-4xl">
+                  Formação
+                </h3>
+              </div>
+              <p className="max-w-sm text-sm leading-relaxed text-porcelain/65">
+                Uma trajetória construída em instituições de referência em medicina e cirurgia.
+              </p>
             </div>
           </Rise>
 
-          <div className="mt-8 divide-y divide-espresso/10">
-            {FORMATION.map((item, index) => (
-              <Rise key={item.place} delay={(index % 4) + 1}>
-                <div className="grid gap-2 py-5 md:grid-cols-12 md:items-baseline md:gap-8">
-                  <p className="text-xs font-medium tracking-[0.2em] uppercase text-clay md:col-span-2">
-                    {item.year}
-                  </p>
-                  <p className="font-display text-lg text-espresso md:col-span-4 md:text-xl">{item.place}</p>
-                  <p className="text-sm text-stone md:col-span-6 md:text-base">{item.detail}</p>
-                </div>
-              </Rise>
-            ))}
-          </div>
+          <ol className="relative mt-12 md:mt-14">
+            <span
+              className="absolute top-6 bottom-6 left-[1.4rem] w-px bg-gradient-to-b from-clay via-clay/50 to-porcelain/10 md:left-[1.65rem]"
+              aria-hidden="true"
+            />
+
+            {FORMATION.map((item, index) => {
+              const Icon = FORMATION_ICONS[item.icon] || IconGraduation
+              const number = String(index + 1).padStart(2, '0')
+
+              return (
+                <Rise key={`${item.place}-${item.year}`} delay={(index % 4) + 1}>
+                  <li className="relative grid gap-4 py-5 md:grid-cols-[auto_1fr] md:gap-8 md:py-6">
+                    <div className="relative z-10 flex items-start gap-4 md:gap-5">
+                      <div className="grid size-12 shrink-0 place-items-center bg-clay text-porcelain ring-[6px] ring-espresso md:size-14 [&_svg]:size-6 [&_svg]:brightness-0 [&_svg]:invert">
+                        <Icon />
+                      </div>
+                      <span className="pt-2 font-display text-2xl text-porcelain/25 md:hidden">{number}</span>
+                    </div>
+
+                    <div className="border border-porcelain/10 bg-white/[0.04] p-5 md:flex md:items-start md:gap-8 md:p-6">
+                      <span className="hidden shrink-0 font-display text-4xl leading-none text-porcelain/20 md:block">
+                        {number}
+                      </span>
+
+                      <div className="min-w-0 flex-1">
+                        <span className="inline-flex bg-clay/25 px-3 py-1 text-[10px] font-semibold tracking-[0.2em] uppercase text-rose">
+                          {item.year}
+                        </span>
+                        <h4 className="mt-3 font-display text-xl leading-snug text-porcelain md:text-2xl">
+                          {item.place}
+                        </h4>
+                        <p className="mt-2 text-sm leading-relaxed text-porcelain/75 md:text-base">{item.detail}</p>
+                      </div>
+                    </div>
+                  </li>
+                </Rise>
+              )
+            })}
+          </ol>
         </div>
       </div>
     </section>

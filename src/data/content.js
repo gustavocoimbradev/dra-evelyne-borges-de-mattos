@@ -23,27 +23,32 @@ export const FORMATION = [
   {
     year: 'Residência',
     place: 'Hospital das Clínicas Samuel Libânio',
-    detail: 'Cirurgia Plástica',
+    detail: 'Residência médica em Cirurgia Plástica',
+    icon: 'hospital',
   },
   {
     year: 'Residência',
     place: 'Santa Casa de Misericórdia de Juiz de Fora',
-    detail: 'Cirurgia Geral',
+    detail: 'Residência médica em Cirurgia Geral',
+    icon: 'doctor',
   },
   {
     year: 'Graduação',
     place: 'UFJF',
     detail: 'Medicina — Universidade Federal de Juiz de Fora',
+    icon: 'graduation',
   },
   {
     year: 'Mestrado',
     place: 'UNIVÁS',
-    detail: 'Ciências Aplicadas à Saúde',
+    detail: 'Ciências Aplicadas à Saúde — Universidade do Vale do Sapucaí',
+    icon: 'award',
   },
   {
     year: 'Doutorado',
     place: 'UNIFESP',
     detail: 'Doutoranda — Universidade Federal de São Paulo',
+    icon: 'graduation',
   },
 ]
 
