@@ -1,6 +1,6 @@
 # Dra. Evelyne Borges de Mattos
 
-Site em React + Vite + Tailwind — redesign contemporâneo.
+Site em React + Vite + Tailwind. Redesign contemporâneo.
 
 **Produção:** https://draevelyneborgesdemattos.com.br/
 

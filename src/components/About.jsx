@@ -1,19 +1,10 @@
-import { FORMATION, SOCIAL } from '../data/content'
-import Button from './Button'
+import FormationDialog from './FormationDialog'
 import Rise from './Reveal'
-import { IconAward, IconDoctor, IconGraduation, IconHospital } from './Icons'
-
-const FORMATION_ICONS = {
-  hospital: IconHospital,
-  doctor: IconDoctor,
-  graduation: IconGraduation,
-  award: IconAward,
-}
 
 export default function About() {
   return (
     <section id="quemsoueu" className="bg-white">
-      <div className="mx-auto grid max-w-[1400px] items-center gap-10 px-5 py-16 md:px-8 lg:grid-cols-12 lg:gap-14 lg:px-12 lg:py-20">
+      <div className="container-site grid items-center gap-10 py-16 lg:grid-cols-12 lg:gap-14 lg:py-20">
         <Rise className="relative z-0 lg:col-span-5 lg:pr-6">
           <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none">
             <div
@@ -69,76 +60,8 @@ export default function About() {
             </div>
           </Rise>
           <Rise delay={3} className="mt-8">
-            <Button href={SOCIAL.lattes} variant="outline" icon="lattes">
-              Currículo Lattes
-            </Button>
+            <FormationDialog />
           </Rise>
-        </div>
-      </div>
-
-      <div className="relative overflow-hidden bg-espresso">
-        <div
-          className="pointer-events-none absolute -right-16 top-10 size-64 rounded-full border border-clay/25"
-          aria-hidden="true"
-        />
-        <div
-          className="pointer-events-none absolute -left-10 bottom-0 size-40 bg-clay/15"
-          aria-hidden="true"
-        />
-
-        <div className="relative mx-auto max-w-[1400px] px-5 py-14 md:px-8 lg:px-12 lg:py-16">
-          <Rise>
-            <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-              <div>
-                <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-rose">Trajetória</p>
-                <h3 className="mt-2 font-display text-3xl tracking-[-0.02em] text-porcelain md:text-4xl">
-                  Formação
-                </h3>
-              </div>
-              <p className="max-w-sm text-sm leading-relaxed text-porcelain/65">
-                Uma trajetória construída em instituições de referência em medicina e cirurgia.
-              </p>
-            </div>
-          </Rise>
-
-          <ol className="relative mt-12 space-y-5 md:mt-14 md:space-y-0">
-            <span
-              className="absolute top-6 bottom-6 left-6 w-px -translate-x-1/2 bg-gradient-to-b from-clay via-clay/50 to-porcelain/15 md:left-7"
-              aria-hidden="true"
-            />
-            {FORMATION.map((item, index) => {
-              const Icon = FORMATION_ICONS[item.icon] || IconGraduation
-              const number = String(index + 1).padStart(2, '0')
-              return (
-                <Rise key={`${item.place}-${item.year}`} delay={(index % 4) + 1}>
-                  <li className="relative flex gap-4 py-0 md:grid md:grid-cols-[auto_1fr] md:gap-8 md:py-6">
-                    <div className="relative z-10 flex shrink-0 flex-col items-center gap-2">
-                      <div className="grid size-12 place-items-center bg-clay text-white ring-[6px] ring-espresso md:size-14 [&_svg]:size-6 [&_svg]:brightness-0 [&_svg]:invert">
-                        <Icon />
-                      </div>
-                      <span className="font-display text-sm text-porcelain/30 md:hidden">{number}</span>
-                    </div>
-                    <div className="min-w-0 flex-1 border border-porcelain/10 bg-white/[0.04] p-4 sm:p-5 md:flex md:items-start md:gap-8 md:p-6">
-                      <span className="hidden shrink-0 font-display text-4xl leading-none text-porcelain/20 md:block">
-                        {number}
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <span className="inline-flex bg-clay px-3 py-1 text-[10px] font-semibold tracking-[0.2em] uppercase text-white">
-                          {item.year}
-                        </span>
-                        <h4 className="mt-3 font-display text-xl leading-snug text-porcelain md:text-2xl">
-                          {item.place}
-                        </h4>
-                        <p className="mt-2 text-sm leading-relaxed text-porcelain/70 md:text-base">
-                          {item.detail}
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </Rise>
-              )
-            })}
-          </ol>
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ export default function Videos({ onOpenVideo }) {
   return (
     <>
       <section id="videos" className="bg-white">
-        <div className="mx-auto max-w-[1400px] px-5 pt-14 pb-8 md:px-8 lg:px-12 lg:pt-16">
+        <div className="container-site pt-14 pb-8 lg:pt-16">
           <Rise>
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
@@ -26,7 +26,7 @@ export default function Videos({ onOpenVideo }) {
           </Rise>
         </div>
 
-        <div className="hide-scrollbar mx-auto flex max-w-[1400px] snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-6 md:gap-5 md:px-8 lg:px-12">
+        <div className="container-site hide-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto pb-6 md:gap-5">
           {VIDEOS.map((video, index) => (
             <Rise
               key={video.id}
@@ -57,7 +57,7 @@ export default function Videos({ onOpenVideo }) {
           ))}
         </div>
 
-        <div className="mx-auto flex max-w-[1400px] flex-col gap-3 px-5 py-8 sm:flex-row md:px-8 lg:px-12">
+        <div className="container-site flex flex-col gap-3 py-8 sm:flex-row">
           <Button href={WHATSAPP.online} variant="filled" icon="globe">
             Consulta online
           </Button>
@@ -68,7 +68,7 @@ export default function Videos({ onOpenVideo }) {
       </section>
 
       <section id="posts" className="bg-clay">
-        <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-6 px-5 py-12 text-center md:flex-row md:items-center md:justify-between md:px-8 md:text-left lg:px-12">
+        <div className="container-site flex flex-col items-center gap-6 py-12 text-center md:flex-row md:items-center md:justify-between md:text-left">
           <Rise>
             <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-white/70">Instagram</p>
             <h2 className="mt-2 font-display text-2xl text-white md:text-3xl">Bastidores no Instagram</h2>

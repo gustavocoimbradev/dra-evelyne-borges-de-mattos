@@ -8,7 +8,7 @@ const presencial = LOCATIONS.find((item) => item.id === 'presencial')
 export default function Locations() {
   return (
     <section id="enderecos" className="bg-porcelain">
-      <div className="mx-auto max-w-[1400px] px-5 py-14 md:px-8 lg:px-12 lg:py-16">
+      <div className="container-site py-14 lg:py-16">
         <Rise>
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-[11px] font-medium tracking-[0.3em] uppercase text-clay">Agendar</p>
@@ -16,7 +16,7 @@ export default function Locations() {
               Como prefere ser atendida?
             </h2>
             <p className="mt-4 text-base leading-relaxed text-stone md:text-lg">
-              Escolha a modalidade que faz mais sentido para você — online ou presencial em Varginha.
+              Escolha a modalidade que faz mais sentido para você: online ou presencial em Varginha.
             </p>
           </div>
         </Rise>
@@ -24,7 +24,6 @@ export default function Locations() {
         <div className="mt-12 grid items-stretch gap-5 lg:mt-14 lg:grid-cols-2 lg:gap-6">
           <Rise delay={1}>
             <article className="relative flex h-full flex-col overflow-hidden bg-white ring-1 ring-clay/20">
-              <div className="h-1.5 bg-clay" />
               <div className="relative h-48 overflow-hidden md:h-56">
                 <img
                   src={online.image}
@@ -70,7 +69,6 @@ export default function Locations() {
 
           <Rise delay={2}>
             <article className="relative flex h-full flex-col overflow-hidden bg-espresso text-porcelain">
-              <div className="h-1.5 bg-clay" />
               <div className="relative h-48 overflow-hidden md:h-56">
                 <img
                   src={presencial.image}

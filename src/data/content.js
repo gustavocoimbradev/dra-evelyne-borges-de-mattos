@@ -19,6 +19,9 @@ export const SOCIAL = {
   lattes: 'http://lattes.cnpq.br/6116710948494978',
 }
 
+/** Imagem stock genérica dos banners internos (categoria / procedimento). */
+export const INTERNAL_BANNER_IMAGE = '/assets/images/banner-internal.jpg'
+
 export const FORMATION = [
   {
     year: 'Residência',
@@ -35,76 +38,20 @@ export const FORMATION = [
   {
     year: 'Graduação',
     place: 'UFJF',
-    detail: 'Medicina — Universidade Federal de Juiz de Fora',
+    detail: 'Medicina, Universidade Federal de Juiz de Fora',
     icon: 'graduation',
   },
   {
     year: 'Mestrado',
     place: 'UNIVÁS',
-    detail: 'Ciências Aplicadas à Saúde — Universidade do Vale do Sapucaí',
+    detail: 'Ciências Aplicadas à Saúde, Universidade do Vale do Sapucaí',
     icon: 'award',
   },
   {
     year: 'Doutorado',
     place: 'UNIFESP',
-    detail: 'Doutoranda — Universidade Federal de São Paulo',
+    detail: 'Doutoranda, Universidade Federal de São Paulo',
     icon: 'graduation',
-  },
-]
-
-export const PROCEDURES = [
-  {
-    title: 'Cirurgias Mamárias',
-    image: '/assets/images/circle1.webp',
-    items: [
-      'Mamoplastia de aumento (prótese de mama)',
-      'Mastopexia',
-      'Redução de mamas',
-      'Ginecomastia',
-      'Explante (retirada de prótese)',
-    ],
-  },
-  {
-    title: 'Cirurgias Faciais',
-    image: '/assets/images/circle2.webp',
-    items: [
-      'Blefaroplastia',
-      'Otoplastia',
-      'Lifting facial',
-      'Elevação de supercílio',
-      'Lipo de papada',
-    ],
-  },
-  {
-    title: 'Cirurgias Corporais',
-    image: '/assets/images/circle3.webp',
-    items: [
-      'Abdominoplastia',
-      'Lipoaspiração',
-      'Lipoabdominoplastia',
-      'Lipoescultura',
-      'Braquioplastia (braços)',
-      'Cruroplastia (coxas)',
-      'Ninfoplastia',
-    ],
-  },
-  {
-    title: 'Minimamente Invasivos',
-    image: '/assets/images/circle4.webp',
-    items: [
-      'Tratamentos para rugas e envelhecimento em geral',
-      'Bioestimuladores de colágeno',
-    ],
-  },
-  {
-    title: 'Cirurgias Reparadoras',
-    image: '/assets/images/circle5.webp',
-    items: [
-      'Ressecção de câncer de pele e reconstrução',
-      'Queimaduras',
-      'Correção de cicatriz',
-      'Lobuloplastia (orelha rasgada)',
-    ],
   },
 ]
 
@@ -152,9 +99,9 @@ export const LOCATIONS = [
     tagline: 'Consultório em Varginha',
     description: 'Atendimento presencial no consultório, com avaliação detalhada e acompanhamento próximo.',
     address: {
-      street: 'Av. Castelo Branco, 245 — Sala 205',
+      street: 'Av. Castelo Branco, 245, Sala 205',
       neighborhood: 'Vila Verde',
-      city: 'Varginha — MG',
+      city: 'Varginha, MG',
       zip: '37012-005',
     },
     points: ['Exame clínico presencial', 'Ambiente reservado', 'Acompanhamento próximo'],

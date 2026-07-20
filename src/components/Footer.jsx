@@ -1,12 +1,15 @@
+import { Link, useLocation } from 'react-router-dom'
 import { NAV_ITEMS, SOCIAL, WHATSAPP } from '../data/content'
 import Button from './Button'
 import { IconFacebook, IconInstagram } from './Icons'
 
 export default function Footer() {
+  const { pathname } = useLocation()
+  const isHome = pathname === '/'
+
   return (
     <footer id="colophon" className="bg-espresso text-porcelain">
-      <div className="h-1.5 bg-clay" />
-      <div className="mx-auto max-w-[1400px] px-5 py-14 md:px-8 lg:px-12 lg:py-16">
+      <div className="container-site py-14 lg:py-16">
         <div className="grid gap-10 border-b border-porcelain/10 pb-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <img
@@ -33,9 +36,12 @@ export default function Footer() {
               <ul className="mt-5 space-y-3">
                 {NAV_ITEMS.map((item) => (
                   <li key={item.href}>
-                    <a href={item.href} className="text-porcelain/80 transition hover:text-porcelain">
+                    <Link
+                      to={isHome ? item.href : `/${item.href}`}
+                      className="text-porcelain/80 transition hover:text-porcelain"
+                    >
                       {item.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

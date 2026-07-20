@@ -1,0 +1,330 @@
+{
+  "siteName": "Dra. Evelyne Borges de Mattos",
+  "siteUrl": "https://draevelyneborgesdemattos.com.br",
+  "specialty": "Cirurgia Plástica",
+  "credentials": "SBCP e AMB",
+  "city": "Varginha, MG",
+  "categories": [
+    {
+      "slug": "cirurgias-mamarias",
+      "title": "Cirurgias Mamárias",
+      "image": "/assets/images/circle1.webp",
+      "procedures": [
+        {
+          "slug": "mamoplastia-de-aumento",
+          "title": "Mamoplastia de aumento (prótese de mama)",
+          "whatIs": "A mamoplastia de aumento é a cirurgia plástica que aumenta o volume das mamas com o uso de próteses de silicone. O objetivo é melhorar o contorno, a projeção e a proporção do busto em relação ao corpo.",
+          "howItWorks": "Na avaliação, são definidos tamanho, formato e via de acesso da prótese (por exemplo, sulco mamário, aréola ou axila), conforme a anatomia de cada pessoa. A cirurgia é feita em ambiente hospitalar, com a prótese posicionada atrás da glândula ou do músculo peitoral. O pós-operatório inclui repouso relativo, uso de sutiã modelador e retorno para acompanhamento.",
+          "indicatedFor": [
+            "Quem deseja aumentar o volume das mamas",
+            "Quem busca mais projeção ou simetria do busto",
+            "Quem tem mamas pequenas em relação ao tronco",
+            "Após avaliação clínica que confirme indicação e segurança do procedimento"
+          ]
+        },
+        {
+          "slug": "mastopexia",
+          "title": "Mastopexia",
+          "whatIs": "A mastopexia, ou lifting de mama, é a cirurgia que reposiciona as mamas caídas (ptose), removendo excesso de pele e reorganizando o tecido para um contorno mais firme e elevado.",
+          "howItWorks": "O planejamento define o tipo de cicatriz (ao redor da aréola, vertical ou em âncora) conforme o grau de ptose. Em alguns casos, pode ser associada a prótese quando também há desejo de volume. A cirurgia reposiciona a aréola e remove a pele sobrando; o pós-operatório envolve cuidados com curativos, sutiã e restrição de esforço.",
+          "indicatedFor": [
+            "Mamas caídas após gravidez, amamentação ou emagrecimento",
+            "Perda de firmeza e projeção do busto",
+            "Aréolas posicionadas mais baixas do que o desejado",
+            "Quem busca elevação das mamas com ou sem troca/colocação de prótese"
+          ]
+        },
+        {
+          "slug": "reducao-de-mamas",
+          "title": "Redução de mamas",
+          "whatIs": "A redução de mamas (mamoplastia redutora) diminui o volume mamário em excesso, aliviando peso sobre ombros e coluna e melhorando o contorno e a proporção do busto.",
+          "howItWorks": "É removido tecido glandular, gordura e pele em excesso, com reposicionamento da aréola. A técnica e a cicatriz dependem do volume a reduzir. Além do resultado estético, o procedimento pode melhorar desconforto físico relacionado ao peso das mamas. O pós-operatório inclui sutiã modelador e acompanhamento.",
+          "indicatedFor": [
+            "Mamas muito volumosas que causam dor nas costas, ombros ou pescoço",
+            "Marcas de sutiã, irritação na pele sob as mamas ou dificuldade para se exercitar",
+            "Desproporção acentuada entre o busto e o restante do corpo",
+            "Após avaliação que confirme benefício clínico e cirúrgico"
+          ]
+        },
+        {
+          "slug": "ginecomastia",
+          "title": "Ginecomastia",
+          "whatIs": "A ginecomastia é o aumento da mama masculina por excesso de tecido glandular e/ou gordura. A cirurgia de correção remove esse excesso para um contorno torácico mais masculino e plano.",
+          "howItWorks": "Pode envolver lipoaspiração, remoção de glândula por pequena incisão (geralmente perto da aréola) ou a combinação das duas, conforme o tipo de ginecomastia. Antes, é importante investigar causas clínicas. O pós-operatório costuma incluir cinta ou compressão no tórax e restrição de esforço.",
+          "indicatedFor": [
+            "Homens com aumento persistente das mamas",
+            "Assimetria ou contorno torácico que incomoda no espelho ou nas roupas",
+            "Casos em que dieta e exercício não resolveram o excesso localizado",
+            "Após investigação médica que descarte causas tratáveis clinicamente"
+          ]
+        },
+        {
+          "slug": "explante",
+          "title": "Explante (retirada de prótese)",
+          "whatIs": "O explante é a cirurgia de retirada das próteses de mama. Pode ser feita isoladamente ou associada a mastopexia, quando há flacidez após a remoção dos implantes.",
+          "howItWorks": "A via de acesso e a necessidade de remoção da cápsula (tecido ao redor da prótese) são definidas na consulta. Em alguns casos, apenas se retira o implante; em outros, ajusta-se a pele e o tecido remanescente. O acompanhamento pós-operatório orienta compressão, cuidados com cicatriz e evolução do contorno.",
+          "indicatedFor": [
+            "Quem deseja viver sem próteses de mama",
+            "Indicação médica relacionada a complicações ou insatisfação com os implantes",
+            "Troca de plano terapêutico após avaliação individualizada",
+            "Situações em que a retirada deve ser planejada junto com lifting de mama"
+          ]
+        }
+      ],
+      "whatIs": "Cirurgias mamárias são procedimentos de cirurgia plástica que alteram o volume, a forma ou a posição das mamas, conforme a necessidade de cada pessoa.",
+      "howItWorks": "Na consulta, a avaliação define a técnica mais adequada, por exemplo aumento com prótese, elevação, redução, tratamento de ginecomastia ou retirada de prótese. O planejamento considera anatomia, histórico de saúde e objetivo do tratamento."
+    },
+    {
+      "slug": "cirurgias-faciais",
+      "title": "Cirurgias Faciais",
+      "image": "/assets/images/circle2.webp",
+      "procedures": [
+        {
+          "slug": "blefaroplastia",
+          "title": "Blefaroplastia",
+          "whatIs": "A blefaroplastia é a cirurgia das pálpebras que remove excesso de pele e, quando indicado, bolsas de gordura das pálpebras superiores e/ou inferiores, suavizando o aspecto cansado do olhar.",
+          "howItWorks": "As incisões ficam em sulcos naturais da pálpebra. Remove-se pele sobrando e, se necessário, ajusta-se a gordura. Pode ser feita só na pálpebra superior, só na inferior ou nas duas. O pós-operatório envolve inchaço e equimoses temporários, com cuidados locais e proteção solar.",
+          "indicatedFor": [
+            "Excesso de pele nas pálpebras superiores",
+            "Bolsas ou flacidez nas pálpebras inferiores",
+            "Olhar cansado mesmo com bom descanso",
+            "Casos em que o excesso de pele superior atrapalha o campo visual"
+          ]
+        },
+        {
+          "slug": "otoplastia",
+          "title": "Otoplastia",
+          "whatIs": "A otoplastia corrige orelhas proeminentes (“de abano”) ou irregularidades do contorno auricular, aproximando as orelhas da cabeça e melhorando a harmonia do rosto.",
+          "howItWorks": "Em geral a incisão fica atrás da orelha. Remodela-se a cartilagem e fixa-se a nova posição. Pode ser realizada em adultos e, em casos selecionados, em crianças a partir da idade em que a cartilagem já está mais formada. Usa-se faixa ou curativo no pós-operatório inicial.",
+          "indicatedFor": [
+            "Orelhas muito projetadas em relação à cabeça",
+            "Assimetria entre as orelhas",
+            "Incomodidade estética com o formato auricular",
+            "Pacientes avaliados clinicamente para a correção cirúrgica"
+          ]
+        },
+        {
+          "slug": "lifting-facial",
+          "title": "Lifting facial",
+          "whatIs": "O lifting facial (ritidoplastia) reposiciona tecidos da face e do pescoço que cederam com o tempo, reduzindo flacidez e redefinindo o contorno do rosto de forma mais duradoura que tratamentos superficiais isolados.",
+          "howItWorks": "As vias de acesso e a extensão do lifting (face média, mandíbula, pescoço) dependem da anatomia e do grau de envelhecimento. Os tecidos profundos e a pele são reposicionados; o excesso de pele é removido com critério para resultado natural. A recuperação exige repouso, cuidados com cicatrizes e acompanhamento.",
+          "indicatedFor": [
+            "Flacidez evidente em face e/ou pescoço",
+            "Perda de definição da mandíbula e do oval do rosto",
+            "Sinais de envelhecimento que não respondem só a procedimentos minimamente invasivos",
+            "Pessoas com expectativa realista e boa condição clínica para cirurgia"
+          ]
+        },
+        {
+          "slug": "elevacao-de-supercilio",
+          "title": "Elevação de supercílio",
+          "whatIs": "A elevação de supercílio (brow lift) reposiciona as sobrancelhas caídas, abrindo o olhar e suavizando o aspecto pesado da região frontal e periocular.",
+          "howItWorks": "Existem técnicas endoscópicas ou por abordagens no couro cabeludo/região temporal, escolhidas conforme a queda e a linha do cabelo. O objetivo é elevar e estabilizar o supercílio sem exageros. O pós-operatório pode incluir inchaço temporário e cuidados com a área operada.",
+          "indicatedFor": [
+            "Sobrancelhas caídas que “fecham” o olhar",
+            "Assimetria importante entre os supercílios",
+            "Excesso de pele na pálpebra associado à queda da sobrancelha",
+            "Casos em que a blefaroplastia isolada não resolveria a causa da queda"
+          ]
+        },
+        {
+          "slug": "lipo-de-papada",
+          "title": "Lipo de papada",
+          "whatIs": "A lipo de papada remove gordura localizada abaixo do queixo e no contorno do pescoço, ajudando a definir a linha da mandíbula e reduzir o aspecto de “queixo duplo”.",
+          "howItWorks": "Por pequenas incisões, a gordura é aspirada de forma controlada. Em alguns pacientes, pode ser associada a outras condutas para flacidez, se houver indicação. O uso de faixa ou mentoneira e o acompanhamento fazem parte do pós-operatório.",
+          "indicatedFor": [
+            "Acúmulo de gordura na papada com boa qualidade de pele",
+            "Desejo de mais definição no contorno do pescoço e da mandíbula",
+            "Queixo duplo que não melhora só com emagrecimento",
+            "Após avaliação que diferencie gordura de flacidez importante"
+          ]
+        }
+      ],
+      "whatIs": "Cirurgias faciais são procedimentos que tratam o contorno e a harmonia do rosto e do pescoço, incluindo pálpebras, orelhas, flacidez facial e região do mento.",
+      "howItWorks": "A indicação é feita após avaliação clínica da pele, da estrutura facial e da queixa principal. A técnica escolhida depende da área a tratar e do resultado esperado, com orientações claras de recuperação."
+    },
+    {
+      "slug": "cirurgias-corporais",
+      "title": "Cirurgias Corporais",
+      "image": "/assets/images/circle3.webp",
+      "procedures": [
+        {
+          "slug": "abdominoplastia",
+          "title": "Abdominoplastia",
+          "whatIs": "A abdominoplastia remove excesso de pele e gordura do abdômen e, quando necessário, corrige a diástase dos músculos retos, firmando a parede abdominal e melhorando o contorno da cintura.",
+          "howItWorks": "A cicatriz costuma ficar na região do biquíni; o umbigo é reposicionado. A pele sobrando é retirada e a musculatura pode ser aproximada. É comum após grandes variações de peso ou gestações. O pós-operatório inclui cinta, drenagens conforme orientação e restrição de esforço.",
+          "indicatedFor": [
+            "Excesso de pele no abdômen (aventaleamento)",
+            "Diástase abdominal com flacidez",
+            "Abdômen que não responde só a dieta e exercício",
+            "Pessoas com peso relativamente estável e boa condição clínica"
+          ]
+        },
+        {
+          "slug": "lipoaspiracao",
+          "title": "Lipoaspiração",
+          "whatIs": "A lipoaspiração remove gordura localizada em áreas específicas do corpo para refinar o contorno. Não é método de emagrecimento, e sim de modelagem corporal.",
+          "howItWorks": "Com cânulas finas e pequenas incisões, a gordura é aspirada das regiões combinadas na consulta (abdômen, flancos, costas, coxas etc.). A quantidade e as áreas dependem da segurança e do objetivo. Cinta modeladora e acompanhamento são parte da recuperação.",
+          "indicatedFor": [
+            "Gordura localizada resistente a dieta e exercício",
+            "Desejo de melhorar o contorno em áreas específicas",
+            "Pessoas próximas do peso ideal, sem expectativa de “emagrecer” pela lipo",
+            "Boa elasticidade de pele na região a tratar"
+          ]
+        },
+        {
+          "slug": "lipoabdominoplastia",
+          "title": "Lipoabdominoplastia",
+          "whatIs": "A lipoabdominoplastia combina lipoaspiração do abdômen/flancos com abdominoplastia, tratando ao mesmo tempo gordura localizada, excesso de pele e, se indicado, a musculatura abdominal.",
+          "howItWorks": "Primeiro modela-se o contorno com lipoaspiração; em seguida remove-se a pele sobrando e trata-se a parede muscular quando necessário. O planejamento é individual para equilíbrio entre definição e segurança. O pós-operatório segue lógica semelhante à abdominoplastia, com cinta e restrições.",
+          "indicatedFor": [
+            "Flacidez abdominal associada a gordura nos flancos ou no abdômen",
+            "Quem se beneficiaria de lipo e abdominoplastia em um planejamento conjunto",
+            "Pós-gestação ou emagrecimento com sobra de pele e adiposidade local",
+            "Após avaliação completa de risco e expectativa de resultado"
+          ]
+        },
+        {
+          "slug": "lipoescultura",
+          "title": "Lipoescultura",
+          "whatIs": "A lipoescultura é a lipoaspiração com ênfase em desenhar o contorno corporal, podendo incluir enxerto de gordura em regiões que precisam de volume (por exemplo, glúteos), quando há indicação e gordura disponível.",
+          "howItWorks": "Remove-se gordura de áreas doadoras e, se planejado, prepara-se e enxerta-se em áreas receptoras. O mapa do tratamento é definido na consulta. Nem todo caso recebe enxerto: depende da anatomia e do objetivo. A recuperação envolve compressão e cuidados com as áreas tratadas.",
+          "indicatedFor": [
+            "Quem busca contorno mais harmônico, além da simples redução de volume",
+            "Casos em que o enxerto de gordura pode complementar o resultado",
+            "Gordura localizada com boa reserva doadora",
+            "Expectativa alinhada: refinamento de forma, não emagrecimento global"
+          ]
+        },
+        {
+          "slug": "braquioplastia",
+          "title": "Braquioplastia (braços)",
+          "whatIs": "A braquioplastia remove excesso de pele e, quando indicado, gordura da face interna dos braços, melhorando o contorno após emagrecimento ou flacidez acentuada.",
+          "howItWorks": "A extensão da cicatriz depende da quantidade de pele a retirar (pode ir da axila em direção ao cotovelo). Em alguns casos associa-se lipoaspiração. O pós-operatório inclui compressão, cuidados com a cicatriz e limitação de movimentos amplos no início.",
+          "indicatedFor": [
+            "Flacidez importante na parte interna dos braços",
+            "Excesso de pele após grande perda de peso",
+            "Contorno de braço que incomoda em mangas e movimentos",
+            "Quando a lipoaspiração sozinha não resolve a sobra de pele"
+          ]
+        },
+        {
+          "slug": "cruroplastia",
+          "title": "Cruroplastia (coxas)",
+          "whatIs": "A cruroplastia (lifting de coxas) remove excesso de pele e tecido da face interna das coxas, melhorando atrito, contorno e conforto, sobretudo após emagrecimento.",
+          "howItWorks": "A cicatriz costuma ficar na virilha e, em casos maiores, pode se estender conforme a necessidade. Pode haver lipoaspiração associada. A recuperação exige cuidados com higiene, compressão e restrição de abertura excessiva das pernas no início.",
+          "indicatedFor": [
+            "Flacidez na face interna das coxas",
+            "Irritação de pele por atrito entre as coxas",
+            "Excesso de pele após perda ponderal",
+            "Desejo de melhor contorno da raiz da coxa após avaliação"
+          ]
+        },
+        {
+          "slug": "ninfoplastia",
+          "title": "Ninfoplastia",
+          "whatIs": "A ninfoplastia (labioplastia) reduz ou remodela os pequenos lábios vaginais quando há hipertrofia, assimetria ou desconforto funcional/estético.",
+          "howItWorks": "A técnica remove o excesso de tecido de forma a preservar sensibilidade e função, com cicatrizes discretas na região. A indicação e o desenho da cirurgia são definidos em consulta reservada. O pós-operatório inclui higiene local, repouso relativo e retorno para revisão.",
+          "indicatedFor": [
+            "Pequenos lábios muito alongados ou assimétricos",
+            "Desconforto com roupas, exercícios ou relações",
+            "Incômodo estético que afeta a qualidade de vida",
+            "Após conversa franca e avaliação ginecológica/cirúrgica adequada"
+          ]
+        }
+      ],
+      "whatIs": "Cirurgias corporais remodelam o contorno do tronco e dos membros, com foco em excesso de pele, gordura localizada ou desproporções que não se resolvem só com hábitos.",
+      "howItWorks": "Na avaliação são analisados peso, qualidade da pele e a região a tratar. A partir disso, define-se o procedimento indicado, como abdominoplastia, lipoaspiração ou correção de flacidez em braços e coxas, e o plano de cuidados."
+    },
+    {
+      "slug": "minimamente-invasivos",
+      "title": "Minimamente Invasivos",
+      "image": "/assets/images/circle4.webp",
+      "procedures": [
+        {
+          "slug": "tratamentos-para-rugas-e-envelhecimento",
+          "title": "Tratamentos para rugas e envelhecimento em geral",
+          "whatIs": "São condutas minimamente invasivas para suavizar rugas, linhas de expressão e sinais de envelhecimento facial, com menos downtime do que uma cirurgia, sempre com indicação individualizada.",
+          "howItWorks": "O plano pode combinar toxina botulínica para rugas dinâmicas, preenchimentos ou outros recursos conforme a necessidade clínica, sem protocolo único para todos. A escolha depende da avaliação da pele, da musculatura e do objetivo. Os efeitos têm duração limitada e exigem manutenção conforme orientação.",
+          "indicatedFor": [
+            "Rugas de expressão na testa, entre as sobrancelhas ou ao redor dos olhos",
+            "Sinais iniciais a moderados de envelhecimento facial",
+            "Quem prefere opções sem cortes cirúrgicos, quando há indicação",
+            "Pessoas que entendem a necessidade de reavaliações periódicas"
+          ]
+        },
+        {
+          "slug": "bioestimuladores-de-colageno",
+          "title": "Bioestimuladores de colágeno",
+          "whatIs": "Bioestimuladores de colágeno são substâncias injetáveis que estimulam a produção natural de colágeno na pele, melhorando firmeza e qualidade ao longo das semanas, diferente do preenchimento que só adiciona volume imediato.",
+          "howItWorks": "Após mapeamento da face ou área a tratar, o produto é aplicado em pontos planejados. O resultado aparece de forma progressiva, com sessões eventualmente espaçadas. Massagem ou cuidados específicos podem ser orientados conforme o tipo de bioestimulador utilizado.",
+          "indicatedFor": [
+            "Flacidez leve a moderada e perda de sustentação da pele",
+            "Desejo de melhorar qualidade e firmeza com efeito gradual",
+            "Complemento a outros tratamentos faciais, quando indicado",
+            "Pacientes avaliados quanto a expectativas e contraindicações"
+          ]
+        }
+      ],
+      "whatIs": "Tratamentos minimamente invasivos são opções ambulatoriais para suavizar sinais de envelhecimento e estimular a qualidade da pele, com recuperação geralmente mais rápida do que a cirurgia.",
+      "howItWorks": "Após avaliação do tipo de pele e da queixa, é definido o protocolo mais adequado, por exemplo abordagens para rugas ou bioestimuladores de colágeno, com indicação individualizada na consulta."
+    },
+    {
+      "slug": "cirurgias-reparadoras",
+      "title": "Cirurgias Reparadoras",
+      "image": "/assets/images/circle5.webp",
+      "procedures": [
+        {
+          "slug": "resseccao-de-cancer-de-pele-e-reconstrucao",
+          "title": "Ressecção de câncer de pele e reconstrução",
+          "whatIs": "É a remoção cirúrgica de lesões malignas ou suspeitas da pele, seguida, quando necessário, de reconstrução do local para preservar função e aparência na medida do possível.",
+          "howItWorks": "A lesão é ressecada com margem adequada ao tipo e à localização. A reconstrução pode usar fechamento direto, retalhos locais ou enxertos, conforme o defeito. O material é enviado para análise anatomopatológica. O seguimento inclui cuidados com a ferida e acompanhamento dermatológico/cirúrgico.",
+          "indicatedFor": [
+            "Diagnóstico ou forte suspeita de câncer de pele com indicação cirúrgica",
+            "Lesões que precisam de remoção completa e estudo histológico",
+            "Casos em que a reconstrução ajuda na cicatrização e no resultado funcional/estético",
+            "Encaminhamento após avaliação médica especializada"
+          ]
+        },
+        {
+          "slug": "queimaduras",
+          "title": "Queimaduras",
+          "whatIs": "O tratamento cirúrgico de queimaduras aborda sequelas como retratações, bridas e deformidades que limitam movimento ou causam sofrimento estético, além do manejo de áreas que necessitam de cobertura cutânea.",
+          "howItWorks": "A conduta depende da profundidade, da localização e do tempo da lesão: pode incluir liberação de cicatrizes retráteis, enxertos ou outras técnicas reconstrutivas. O objetivo é melhorar função e conforto, com planejamento caso a caso. Fisioterapia e curativos fazem parte de muitos protocolos.",
+          "indicatedFor": [
+            "Sequelas de queimadura com limitação de movimento",
+            "Cicatrizes retráteis ou bridas incômodas",
+            "Deformidades que prejudicam função ou qualidade de vida",
+            "Após avaliação do estágio da cicatrização e da indicação operatória"
+          ]
+        },
+        {
+          "slug": "correcao-de-cicatriz",
+          "title": "Correção de cicatriz",
+          "whatIs": "A correção de cicatriz (revisão cicatricial) melhora o aspecto, a largura, a altura ou o alívio de cicatrizes inestéticas ou sintomáticas, dentro dos limites biológicos de cada pele.",
+          "howItWorks": "Pode envolver ressecção e nova sutura, zetaplastia, dermoabrasão ou outras técnicas, conforme o tipo de cicatriz (hipertrófica, alargada, retraída etc.). Nem toda cicatriz some: o alvo é torná-la mais discreta e confortável. Proteção solar e acompanhamento são essenciais.",
+          "indicatedFor": [
+            "Cicatrizes largas, irregulares ou muito visíveis",
+            "Cicatrizes que puxam, doem ou limitam movimento",
+            "Resultado insatisfatório de cirurgia ou trauma antigo",
+            "Pessoas com expectativa realista sobre melhora, não “apagamento” total"
+          ]
+        },
+        {
+          "slug": "lobuloplastia",
+          "title": "Lobuloplastia (orelha rasgada)",
+          "whatIs": "A lobuloplastia repara o lóbulo da orelha rasgado, alongado ou bipartido, situação comum após trauma ou uso prolongado de brincos pesados.",
+          "howItWorks": "Remove-se o tecido irregular e sutura-se o lóbulo em nova forma, recuperando a continuidade. O procedimento costuma ser rápido e ambulatorial em muitos casos. Depois, há período sem brincos até a liberação médica para novo furo, se desejado.",
+          "indicatedFor": [
+            "Lóbulo rasgado parcial ou totalmente",
+            "Lóbulo muito alongado ou com furo ampliado",
+            "Assimetria após trauma ou brincos pesados",
+            "Desejo de restaurar o contorno do lóbulo para uso futuro de brincos"
+          ]
+        }
+      ],
+      "whatIs": "Cirurgias reparadoras restauram forma e função após lesões, tumores cutâneos, cicatrizes ou alterações estruturais, com foco em reconstrução segura.",
+      "howItWorks": "Cada caso é avaliado conforme o tipo e a extensão da lesão. O planejamento define a técnica reconstrutiva e o acompanhamento necessário no pós-operatório."
+    }
+  ]
+}

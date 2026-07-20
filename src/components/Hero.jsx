@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="absolute inset-0 hidden bg-gradient-to-r from-porcelain via-porcelain/88 to-transparent md:block" />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-[1400px] flex-1 flex-col justify-end px-5 pb-10 pt-28 md:justify-center md:px-8 md:pb-16 lg:px-12">
+      <div className="container-site relative z-10 flex flex-1 flex-col justify-end pb-10 pt-28 md:justify-center md:pb-16">
         <div className="max-w-2xl">
           <div className="hero-rise flex items-center gap-3">
             <span className="h-px w-8 bg-clay" aria-hidden="true" />
@@ -38,7 +38,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-rise hero-d2 mt-5 max-w-md text-base leading-relaxed text-stone md:text-lg">
-            Transformando vidas com qualidade, segurança e dedicação — consulta online ou presencial.
+            Transformando vidas com qualidade, segurança e dedicação. Consulta online ou presencial.
           </p>
 
           <div className="hero-rise hero-d3 mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

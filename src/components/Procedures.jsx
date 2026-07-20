@@ -1,11 +1,15 @@
-import { PROCEDURES, WHATSAPP } from '../data/content'
+import { Link } from 'react-router-dom'
+import { WHATSAPP } from '../data/content'
+import { categoryPath, proceduresForHome } from '../data/procedures'
 import Button from './Button'
 import Rise from './Reveal'
+
+const PROCEDURES = proceduresForHome()
 
 export default function Procedures() {
   return (
     <section id="procedimentos" className="bg-porcelain">
-      <div className="mx-auto max-w-[1400px] px-5 py-14 md:px-8 lg:px-12 lg:py-16">
+      <div className="container-site py-14 lg:py-16">
         <Rise>
           <div className="max-w-2xl">
             <div className="flex items-center gap-3">
@@ -24,11 +28,11 @@ export default function Procedures() {
 
         <div className="mt-12 space-y-4 md:mt-14">
           {PROCEDURES.map((procedure, index) => (
-            <Rise key={procedure.title} delay={(index % 4) + 1}>
+            <Rise key={procedure.slug} delay={(index % 4) + 1}>
               <article className="border border-espresso/10 border-l-4 border-l-clay bg-white transition hover:border-clay/40 hover:shadow-[0_12px_40px_-20px_rgba(196,91,79,0.35)]">
                 <div className="grid gap-6 p-5 md:grid-cols-[140px_1fr] md:items-start md:gap-8 md:p-7 lg:grid-cols-[160px_220px_1fr]">
                   <div className="flex items-center gap-4 md:block">
-                    <div className="relative size-24 shrink-0 overflow-hidden md:size-36 lg:size-40">
+                    <Link to={categoryPath(procedure.slug)} className="relative size-24 shrink-0 overflow-hidden md:size-36 lg:size-40">
                       <img
                         src={procedure.image}
                         alt=""
@@ -36,7 +40,7 @@ export default function Procedures() {
                         className="h-full w-full object-cover"
                       />
                       <span className="absolute inset-0 ring-1 ring-inset ring-clay/20" />
-                    </div>
+                    </Link>
                     <span className="font-display text-3xl text-clay/40 md:mt-3 md:block md:text-4xl">
                       {String(index + 1).padStart(2, '0')}
                     </span>
@@ -46,7 +50,9 @@ export default function Procedures() {
                       Categoria
                     </p>
                     <h3 className="mt-2 font-display text-2xl leading-tight text-espresso md:text-3xl">
-                      {procedure.title}
+                      <Link to={categoryPath(procedure.slug)} className="hover:text-clay">
+                        {procedure.title}
+                      </Link>
                     </h3>
                     <p className="mt-2 text-sm text-stone">
                       {procedure.items.length} procedimento{procedure.items.length > 1 ? 's' : ''}
@@ -55,11 +61,13 @@ export default function Procedures() {
                   <ul className="grid gap-2 sm:grid-cols-2 lg:gap-x-8 lg:gap-y-2.5">
                     {procedure.items.map((item) => (
                       <li
-                        key={item}
+                        key={item.slug}
                         className="flex items-start gap-2.5 border-b border-clay/15 pb-2.5 text-sm leading-snug text-espresso/85"
                       >
                         <span className="mt-1.5 size-1.5 shrink-0 bg-clay" aria-hidden="true" />
-                        <span>{item}</span>
+                        <Link to={item.href} className="hover:text-clay">
+                          {item.title}
+                        </Link>
                       </li>
                     ))}
                   </ul>
