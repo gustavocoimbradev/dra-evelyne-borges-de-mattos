@@ -1,5 +1,3 @@
-Tirei a seção de direção visual e deixei o README mais direto:
-
 # Dra. Evelyne Borges de Mattos
 
 Site institucional desenvolvido para a **Dra. Evelyne Borges de Mattos**, com foco em uma apresentação elegante, moderna e responsiva.
