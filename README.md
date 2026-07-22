@@ -1,28 +1,80 @@
+Aqui está uma versão mais organizada e profissional:
+
 # Dra. Evelyne Borges de Mattos
 
-Site em React + Vite + Tailwind.
+Site institucional desenvolvido para a **Dra. Evelyne Borges de Mattos**, com foco em uma apresentação elegante, moderna e responsiva.
 
-**Produção:** https://draevelyneborgesdemattos.com.br/
+🔗 **Produção:** [draevelyneborgesdemattos.com.br](https://draevelyneborgesdemattos.com.br/)
 
-## Desenvolvimento
+## Sobre o projeto
 
-npm install
-npm run dev
-```
+O projeto apresenta a trajetória profissional, formação e procedimentos oferecidos pela Dra. Evelyne por meio de uma experiência visual editorial e imersiva.
 
-## Build
+O site foi desenvolvido como uma aplicação front-end estática, priorizando:
 
-```bash
-npm run build
-npm run preview
-```
+* responsividade;
+* desempenho;
+* acessibilidade;
+* experiência do usuário;
+* organização e clareza do conteúdo;
+* identidade visual alinhada à profissional.
+
+## Tecnologias
+
+* React
+* Vite
+* Tailwind CSS
+* JavaScript
 
 ## Direção visual
 
-- Tipografia: **Fraunces** (display) + **Outfit** (UI)
-- Paleta: espresso, clay/terracotta, porcelain
-- Layout editorial com seções imersivas, timeline de formação e procedimentos interativos
+A interface utiliza uma estética editorial, com elementos sofisticados e transições sutis.
+
+* **Tipografia:** Fraunces para títulos e Outfit para textos e elementos de interface
+* **Paleta:** tons de espresso, clay, terracota e porcelain
+* **Layout:** seções imersivas, composição editorial e ampla utilização de espaços
+* **Elementos:** linha do tempo de formação e apresentação interativa dos procedimentos
+
+## Executando localmente
+
+Clone o repositório:
+
+```bash
+git clone <URL-DO-REPOSITORIO>
+cd <NOME-DO-PROJETO>
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+## Build de produção
+
+Gere os arquivos otimizados:
+
+```bash
+npm run build
+```
+
+Visualize o build localmente:
+
+```bash
+npm run preview
+```
 
 ## Screenshot
 
-<img width="100%" height="auto" alt="screencapture-draevelyneborgesdemattos-br-2026-07-22-08_00_52" src="https://github.com/user-attachments/assets/e9e73803-03eb-4574-9bcc-60d34bccbe55" />
+<img
+width="100%"
+height="auto"
+alt="Página inicial do site da Dra. Evelyne Borges de Mattos"
+src="https://github.com/user-attachments/assets/e9e73803-03eb-4574-9bcc-60d34bccbe55"
+/>
