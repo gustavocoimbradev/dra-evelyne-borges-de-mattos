@@ -25,4 +25,4 @@ npm run preview
 
 ## Screenshot
 
-<img width="1499" height="8249" alt="screencapture-draevelyneborgesdemattos-br-2026-07-22-08_00_52" src="https://github.com/user-attachments/assets/e9e73803-03eb-4574-9bcc-60d34bccbe55" />
+<img width="100%" height="auto" alt="screencapture-draevelyneborgesdemattos-br-2026-07-22-08_00_52" src="https://github.com/user-attachments/assets/e9e73803-03eb-4574-9bcc-60d34bccbe55" />
