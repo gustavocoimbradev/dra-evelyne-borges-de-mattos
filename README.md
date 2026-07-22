@@ -24,15 +24,6 @@ O site foi construído como uma aplicação front-end estática, priorizando:
 * Tailwind CSS
 * JavaScript
 
-## Screenshot
-
-<img
-width="100%"
-height="auto"
-alt="Página inicial do site da Dra. Evelyne Borges de Mattos"
-src="https://github.com/user-attachments/assets/e9e73803-03eb-4574-9bcc-60d34bccbe55"
-/>
-
 ## Autoria
 
 Projeto desenvolvido e mantido por **Gustavo Coimbra**.
@@ -48,3 +39,12 @@ Este projeto não possui licença de código aberto.
 Não é permitida a utilização, cópia, reprodução, modificação, distribuição, comercialização ou criação de trabalhos derivados deste código, total ou parcialmente, sem autorização prévia e expressa por escrito do autor.
 
 Os textos, imagens, marcas, identidade visual e demais conteúdos relacionados à Dra. Evelyne Borges de Mattos pertencem aos seus respectivos titulares e também não podem ser reutilizados sem autorização.
+
+## Screenshot
+
+<img
+width="100%"
+height="auto"
+alt="Página inicial do site da Dra. Evelyne Borges de Mattos"
+src="https://github.com/user-attachments/assets/e9e73803-03eb-4574-9bcc-60d34bccbe55"
+/>
