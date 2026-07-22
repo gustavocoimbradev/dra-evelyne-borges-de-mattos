@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Nude brand palette */
   --color-porcelain: #f3dfd6;
   --color-mist: #f7ebe3;
   --color-blush: #faf4ef;
@@ -9,14 +8,11 @@
   --color-peach: #f2bfaa;
   --color-sand: #e2baa1;
   --color-nude: #d6b19e;
-  /* Accent derived from deepest nude — readable on porcelain */
   --color-clay: #9a7664;
   --color-clay-deep: #7d5f4e;
-  /* Neutrals preserved for contrast & luxury */
   --color-espresso: #1f1a17;
   --color-espresso-soft: #322b27;
   --color-stone: #7a655c;
-
   --font-display: 'Fraunces', Georgia, serif;
   --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
 }
